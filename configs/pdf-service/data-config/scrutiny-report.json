@@ -1,0 +1,621 @@
+{
+  "key": "scrutiny-report",
+  "documentType": "SCRUTINY_REPORT",
+  "DataConfigs": {
+    "moduleName": "rainmaker-common",
+    "version": "1.0.0",
+    "baseKeyPath": "$.edcrDetail.*",
+    "entityIdPath": "$.id",
+    "isCommonTableBorderRequired": true,
+    "mappings": [
+      {
+        "topic": "common-pdf-generation-3",
+        "mappings": [
+          {
+            "direct": [
+              {
+                "variable": "City I",
+                "value": {
+                  "path": "PDF_CITY_I"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "AutomatedBuildingPermit",
+                "value": {
+                  "path": "PDF_AUTOMATED_BUILDING_PERMIT_APPROVAL_SYSTEM"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "PlanDocumentScrutiny",
+                "value": {
+                  "path": "PDF_PLAN_DOCUMENT_SCRUTINY_REPORT"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "status",
+                "value": {
+                  "path": "PDF_STATUS"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "pdfApplicantName",
+                "value": {
+                  "path": "PDF_APPLICANT_NAME"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "applicantName",
+                "value": {
+                  "path": "$.planDetail.planInformation.applicantName"
+                }
+              },
+              {
+                "variable": "pdfApplicationDate",
+                "value": {
+                  "path": "PDF_APPLICATION_DATE"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "applicationDate",
+                "value": {
+                  "path": "$.applicationDate"
+                }
+              },
+              {
+                "variable": "pdfApplicationNumber",
+                "value": {
+                  "path": "PDF_APPLICATION_NUMBER"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "applicationNumber",
+                "value": {
+                  "path": "$.applicationNumber"
+                }
+              },
+              {
+                "variable": "pdfApplicationType",
+                "value": {
+                  "path": "PDF_APPLICATION_TYPE"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "applicationType",
+                "value": {
+                  "path": "$.appliactionType"
+                }
+              },
+              {
+                "variable": "pdfOccupancyType",
+                "value": {
+                  "path": "PDF_OCUUPANCY_TYPE"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "occupancy",
+                "value": {
+                  "path": "$.planDetail.planInformation.occupancy"
+                }
+              },
+              {
+                "variable": "pdfDCRNumber",
+                "value": {
+                  "path": "PDF_DCR_NUMBER"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "dcrNumber",
+                "value": {
+                  "path": "$.dcrNumber"
+                }
+              },
+              {
+                "variable": "pdfLicensename",
+                "value": {
+                  "path": "PDF_TECHNICAL_PERSON_LICENSE_NAME"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "technicalPersonlicenseName",
+                "value": {
+                  "path": "$.technicalPersonlicenseName"
+                }
+              },
+              {
+                "variable": "SERVICE_TYPE",
+                "value": {
+                  "path": "PDF_SERVICE_TYPE"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "serviceType",
+                "value": {
+                  "path": "$.planDetail.planInformation.serviceType"
+                }
+              },
+              {
+                "variable": "PLOT_NO",
+                "value": {
+                  "path": "PDF_PLOT_NO"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "planNo",
+                "value": {
+                  "path": "$.planDetail.planInformation.plotNo"
+                }
+              },
+              {
+                "variable": "KHASRA_NO",
+                "value": {
+                  "path": "PDF_KHASRA_NUMBER"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "khasraNo",
+                "value": {
+                  "path": "$.planDetail.planInformation.KhasraNo"
+                }
+              },
+              {
+                "variable": "KHATUNI_NO",
+                "value": {
+                  "path": "PDF_KHATUNI_NUMBER"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "khatuniNo",
+                "value": {
+                  "path": "$.planDetail.planInformation.khatuniNo"
+                }
+              },
+              {
+                "variable": "CITY",
+                "value": {
+                  "path": "PDF_CITY"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "city",
+                "value": {
+                  "path": "$.planDetail.planInformation.city"
+                }
+              },
+              {
+                "variable": "PLOT_AREA_DECLARATION",
+                "value": {
+                  "path": "PDF_PLOT_AREA_AS_PER_DECLARATION"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "plotArea",
+                "value": {
+                  "path": "$.planDetail.planInformation.plotArea"
+                }
+              },
+              {
+                "variable": "PLOT_AREA_MEASUREMENT",
+                "value": {
+                  "path": "PDF_PLOT_AREA_AS_PER_MEASUREMENT"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "AVERAGE_WIDTH_OF_PLOT",
+                "value": {
+                  "path": "PDF_AVERAGE_WIDTH_OF_PLOT"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "widthOfPlot",
+                "value": {
+                  "path": "$.planDetail.planInformation.widthOfPlot"
+                }
+              },
+              {
+                "variable": "AVERAGE_DEPTH_OF_PLOT",
+                "value": {
+                  "path": "PDF_AVERAGE_DEPTH_OF_PLOT"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "depthOfPlot",
+                "value": {
+                  "path": "$.planDetail.planInformation.depthOfPlot"
+                }
+              },
+              {
+                "variable": "ROAD_WIDTH",
+                "value": {
+                  "path": "PDF_ROAD_WIDTH"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "roadWidth",
+                "value": {
+                  "path": "$.planDetail.planInformation.roadWidth"
+                }
+              },
+              {
+                "variable": "SURRENDER_ROAD_WIDTH_AREA",
+                "value": {
+                  "path": "PDF_SURRENDER_ROAD_WIDTH_AREA"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "surrenderRoadWidth",
+                "value": {
+                  "path": "$.planDetail.planInformation.totalSurrenderRoadArea"
+                }
+              },
+              {
+                "variable": "AREA_TYPE",
+                "value": {
+                  "path": "PDF_AREA_TYPE"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "areaType",
+                "value": {
+                  "path": "$.planDetail.planInformation.occupancy"
+                }
+              },
+              {
+                "variable": "DEMOLITION_AREA",
+                "value": {
+                  "path": "PDF_DEMOLITION_AREA"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "demolitionArea",
+                "value": {
+                  "path": "$.planDetail.planInformation.demolitionArea"
+                }
+              },
+              {
+                "variable": "NOC_FROM_AIRPORT",
+                "value": {
+                  "path": "PDF_NOC_FROM_AIRPORT"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "NOC_FROM_NHAI",
+                "value": {
+                  "path": "PDF_NOC_FROM_NHAI"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "NOC_FROM_AIRPORT_AUTHORITY",
+                "value": {
+                  "path": "PDF_NOC_FROM_AIRPORT_AUTHORITY"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "NOC_FROM_DEFENSE_INSTITITION",
+                "value": {
+                  "path": "PDF_NOC_FROM_DEFENSE_INSTITITION"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "NOC_FROM_FIRE_DEPARTMENT",
+                "value": {
+                  "path": "PDF_NOC_FROM_FIRE_DEPARTMENT"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "INDEMNITY_BOND",
+                "value": {
+                  "path": "PDF_INDEMNITY_BOND"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "NOC_FROM_NEIGHBOUR_PLOT",
+                "value": {
+                  "path": "PDF_NOC_FROM_NEIGHBOUR_PLOT"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "NOC_ISSUED_BY_IRRIGATION_DEPARTMENT",
+                "value": {
+                  "path": "PDF_NOC_ISSUED_BY_IRRIGATION_DEPARTMENT"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "NOC_FROM_TAHSILDAR_COLLECTOR",
+                "value": {
+                  "path": "PDF_NOC_FROM_TAHSILDAR_COLLECTOR"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "RAIN_WATER_HARVESTING_DECLARED",
+                "value": {
+                  "path": "PDF_RAIN_WATER_HARVESTING_DECLARED"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "APPLICATION_DETAILS",
+                "value": {
+                  "path": "PDF_APPLICATION_DETAILS"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "PLOT_DETAILS",
+                "value": {
+                  "path": "PDF_PLOT_DETAILS"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              },
+              {
+                "variable": "declaration_in_drawings",
+                "value": {
+                  "path": "PDF_DECLARATION_IN_DRAWINGS"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": false,
+                  "prefix": null,
+                  "module": "rainmaker-common"
+                }
+              }
+            ]
+          },
+          {
+            "externalAPI": [
+              {
+                "path": "http://localhost:8094/egov-mdms-service/v1/_get",
+                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=pg&filter=%5B?(@.code=='{$.tenantId}')%5D",
+                "apiRequest": null,
+                "responseMapping": [
+                  {
+                    "variable": "address",
+                    "value": "$.MdmsRes.tenant.tenants[0].address"
+                  },
+                  {
+                    "variable": "phoneNumber",
+                    "value": "$.MdmsRes.tenant.tenants[0].contactNumber"
+                  },
+                  {
+                    "variable": "website",
+                    "value": "$.MdmsRes.tenant.tenants[0].domainUrl"
+                  },
+                  {
+                    "variable": "email",
+                    "value": "$.MdmsRes.tenant.tenants[0].emailId"
+                  },
+                  {
+                    "variable": "logoImage",
+                    "value": "$.MdmsRes.tenant.tenants[0].logoId",
+                    "type": "image"
+                  },
+                  {
+                    "variable": "logo-header",
+                    "value": "$.MdmsRes.tenant.tenants[0].code",
+                    "localisation": {
+                      "required": false,
+                      "prefix": "TENANT_TENANTS",
+                      "module": "rainmaker-common"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
