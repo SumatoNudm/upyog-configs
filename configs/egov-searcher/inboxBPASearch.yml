@@ -26,7 +26,7 @@ SearchDefinitions:
       isMandatory: true
       operator: ILIKE
       jsonPath: $.searchCriteria.tenantId
-    - name: bpa.applicationNo
+    - name: bpa.application_no
       isMandatory: false
       jsonPath: $.searchCriteria.applicationNo
     - name: bpa.edcrNumber
@@ -87,7 +87,7 @@ SearchDefinitions:
       isMandatory: true
       operator: ILIKE
       jsonPath: $.searchCriteria.tenantId
-    - name: bpa.applicationNo
+    - name: bpa.application_no
       isMandatory: false
       jsonPath: $.searchCriteria.applicationNo
     - name: bpa.edcrNumber
@@ -149,7 +149,7 @@ SearchDefinitions:
       isMandatory: true
       operator: ILIKE
       jsonPath: $.searchCriteria.tenantId
-    - name: bpa.applicationNo
+    - name: bpa.application_no
       isMandatory: false
       jsonPath: $.searchCriteria.applicationNo
     - name: bpa.edcrNumber
@@ -210,7 +210,7 @@ SearchDefinitions:
       isMandatory: true
       operator: ILIKE
       jsonPath: $.searchCriteria.tenantId
-    - name: bpa.applicationNo
+    - name: bpa.application_no
       isMandatory: false
       jsonPath: $.searchCriteria.applicationNo
     - name: bpa.edcrNumber
@@ -272,7 +272,7 @@ SearchDefinitions:
       isMandatory: true
       operator: ILIKE
       jsonPath: $.searchCriteria.tenantId
-    - name: bpa.applicationNo
+    - name: bpa.application_no
       isMandatory: false
       jsonPath: $.searchCriteria.applicationNo
     - name: bpa.edcrNumber
@@ -333,7 +333,7 @@ SearchDefinitions:
       isMandatory: true
       operator: ILIKE
       jsonPath: $.searchCriteria.tenantId
-    - name: bpa.applicationNo
+    - name: bpa.application_no
       isMandatory: false
       jsonPath: $.searchCriteria.applicationNo
     - name: bpa.edcrNumber
