@@ -1,0 +1,25 @@
+serviceMaps:
+  serviceName: gis-service
+  mappings:
+    - version: 1.0
+      description: Persists Gis log in table
+      fromTopic: save-gis-log
+      isTransaction: true
+      queryMaps:
+        - query: INSERT INTO ug_gis_log (application_no, rtpi_id, file_store_id, tenant_id, status, response_status, response_json, createdby, createdtime, lastmodifiedby, lastmodifiedtime, details) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
+          basePath: $
+          jsonMaps:
+            - jsonPath: $.applicationNo
+            - jsonPath: $.rtpiId
+            - jsonPath: $.fileStoreId
+            - jsonPath: $.tenantId
+            - jsonPath: $.status
+            - jsonPath: $.responseStatus
+            - jsonPath: $.responseJson
+            - jsonPath: $.createdby
+            - jsonPath: $.createdtime
+            - jsonPath: $.lastmodifiedby
+            - jsonPath: $.lastmodifiedtime
+            - jsonPath: $.details
+              type: JSON
+              dbType: JSONB
