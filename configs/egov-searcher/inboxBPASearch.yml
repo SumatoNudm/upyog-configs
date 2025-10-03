@@ -105,9 +105,6 @@ SearchDefinitions:
     - name: pi.status
       isMandatory: false
       jsonPath: $.searchCriteria.status
-    - name: bpa.account_id
-      isMandatory: false
-      jsonPath: $.searchCriteria.userid
     - name: pi.businessservice
       isMandatory: false
       jsonPath: $.searchCriteria.businessservice
@@ -228,9 +225,6 @@ SearchDefinitions:
     - name: pi.status
       isMandatory: false
       jsonPath: $.searchCriteria.status
-    - name: bpa.account_id
-      isMandatory: false
-      jsonPath: $.searchCriteria.userid
     - name: pi.businessservice
       isMandatory: false
       jsonPath: $.searchCriteria.businessservice
@@ -351,9 +345,6 @@ SearchDefinitions:
     - name: pi.status
       isMandatory: false
       jsonPath: $.searchCriteria.status
-    - name: bpa.account_id
-      isMandatory: false
-      jsonPath: $.searchCriteria.userid
     - name: pi.businessservice
       isMandatory: false
       jsonPath: $.searchCriteria.businessservice
@@ -390,9 +381,6 @@ SearchDefinitions:
       isMandatory: true
       operator: ILIKE
       jsonPath: $.searchCriteria.tenantId
-    - name: bpa.account_id
-      isMandatory: false
-      jsonPath: $.searchCriteria.userid
     - name: pi.businessservice
       isMandatory: false
       jsonPath: $.searchCriteria.businessservice
