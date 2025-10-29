@@ -161,7 +161,7 @@ serviceMaps:
 
         - query: >
             UPDATE public.ug_bpa_buildingplans
-            SET status = ?, approval_no = ?, approval_date = ?, risk_type = ?,
+            SET status = ?, approval_no = ?, approval_date = ?, risk_type = ?, edcr_number = ?,
                 last_modified_by = ?, last_modified_time = ?, additional_details = ?::JSONB
             WHERE id = ?;
           basePath: BPA
@@ -170,6 +170,7 @@ serviceMaps:
             - jsonPath: $.BPA.approvalNo
             - jsonPath: $.BPA.approvalDate
             - jsonPath: $.BPA.riskType
+            - jsonPath: $.BPA.edcrNumber
             - jsonPath: $.BPA.auditDetails.lastModifiedBy
             - jsonPath: $.BPA.auditDetails.lastModifiedTime
             - jsonPath: $.BPA.additionalDetails
