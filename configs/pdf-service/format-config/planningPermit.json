@@ -171,25 +171,25 @@
                 ],
                 [
                   {
-                    "text": " "
+                    "text": "{{dagNo}}"
                   },
                   {
-                    "text": " "
+                    "text": ""
                   },
                   {
-                    "text": " "
+                    "text": "{{revenueVillage}}"
                   },
                   {
-                    "text": " "
+                    "text": "{{mouza}}"
                   },
                   {
-                    "text": " "
+                    "text": "{{wardNo}}"
                   },
                   {
-                    "text": " "
+                    "text": "{{roadWidth}}"
                   },
                   {
-                    "text": " "
+                    "text": "{{plotArea}}"
                   }
                 ]
               ]
@@ -243,7 +243,7 @@
                     "text": "{{BUILDING_HEIGHT}}"
                   },
                   {
-                    "text": ""
+                    "text": "{{buildingHeight}}"
                   },
                   {
                     "text": ""
@@ -277,7 +277,7 @@
                     "text": "{{USE}}"
                   },
                   {
-                    "text": ""
+                    "text": "{{occupancy}}"
                   },
                   {
                     "text": ""
@@ -294,7 +294,7 @@
                     "text": "{{FAR}}"
                   },
                   {
-                    "text": ""
+                    "text": "{{far}}"
                   },
                   {
                     "text": ""
@@ -311,7 +311,7 @@
                     "text": "{{COVERAGE}}"
                   },
                   {
-                    "text": ""
+                    "text": "{{coverage}}"
                   },
                   {
                     "text": ""
@@ -328,7 +328,7 @@
                     "text": "{{TYPE_OF_CONSTRUCTION}}"
                   },
                   {
-                    "text": ""
+                    "text": "{{constructionType}}"
                   },
                   {
                     "text": ""
@@ -345,7 +345,7 @@
                     "text": "{{FRONT_SET_BACK}}"
                   },
                   {
-                    "text": ""
+                    "text": "{{frontSetBack}}"
                   },
                   {
                     "text": ""
@@ -362,7 +362,7 @@
                     "text": "{{REAR_SET_BACK}}"
                   },
                   {
-                    "text": ""
+                    "text": "{{rearSetBack}}"
                   },
                   {
                     "text": ""
@@ -379,7 +379,7 @@
                     "text": "{{RIGHT_SIDE_SET_BACK}}"
                   },
                   {
-                    "text": ""
+                    "text": "{{rightSetBack}}"
                   },
                   {
                     "text": ""
@@ -396,7 +396,7 @@
                     "text": "{{LEFT_SIDE_SET_BACK}}"
                   },
                   {
-                    "text": ""
+                    "text": "{{leftSetBack}}"
                   },
                   {
                     "text": ""
@@ -593,7 +593,7 @@
                         "style": "textStyles"
                       },
                       {
-                        "text": "{{NOT_APPLICABLE}}",
+                        "text": "{{groundFloorArea}}",
                         "border": [
                           true,
                           true,
