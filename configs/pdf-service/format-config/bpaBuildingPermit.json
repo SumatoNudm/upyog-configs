@@ -134,7 +134,7 @@
                         "style": "textStyles"
                       },
                       {
-                        "text": "",
+                        "text": "{{occupancy}}",
                         "colSpan": 2,
                         "border": [
                           true,
@@ -180,7 +180,7 @@
                         "style": "textStyles"
                       },
                       {
-                        "text": "",
+                        "text": "{{constructionType}}",
                         "colSpan": 2,
                         "border": [
                           true,
@@ -214,7 +214,7 @@
                         "style": "textStyles"
                       },
                       {
-                        "text": "",
+                        "text": "{{dagNo}}",
                         "border": [
                           true,
                           true,
@@ -259,7 +259,7 @@
                         "style": "textStyles"
                       },
                       {
-                        "text": "",
+                        "text": "{{wardNo}}",
                         "border": [
                           true,
                           true,
@@ -304,7 +304,7 @@
                         "style": "textStyles"
                       },
                       {
-                        "text": "",
+                        "text": "{{revenueVillage}}",
                         "colSpan": 2,
                         "border": [
                           true,
@@ -327,7 +327,7 @@
                         "style": "textStyles"
                       },
                       {
-                        "text": "",
+                        "text": "{{mouzaEDCR}}",
                         "colSpan": 2,
                         "border": [
                           true,

@@ -1087,6 +1087,102 @@
                 }
               },
               {
+                "variable": "roadWidth",
+                "value": {
+                  "path": "$.edcrDetail[0].planDetail.planInformation.roadWidth"
+                }
+              },
+              {
+                "variable": "plotArea",
+                "value": {
+                  "path": "$.edcrDetail[0].planDetail.planInformation.plotArea"
+                }
+              },
+              {
+                "variable": "far",
+                "value": {
+                  "path": "$.edcrDetail[0].planDetail.farDetails.providedFar"
+                }
+              },
+              {
+                "variable": "constructionType",
+                "value": {
+                  "path": "$.additionalDetails.constructionType"
+                }
+              },
+              {
+                "variable": "frontSetBack",
+                "value": {
+                  "path": "$.edcrDetail[0].planDetail.blocks[0].setBacks[0].frontYard.area"
+                }
+              },
+              {
+                "variable": "rearSetBack",
+                "value": {
+                  "path": "$.edcrDetail[0].planDetail.blocks[0].setBacks[0].rearYard.area"
+                }
+              },
+              {
+                "variable": "rightSetBack",
+                "value": {
+                  "path": "$.edcrDetail[0].planDetail.blocks[0].setBacks[0].sideYard2.area"
+                }
+              },
+              {
+                "variable": "groundFloorArea",
+                "value": {
+                  "path": "$.edcrDetail[0].planDetail.blocks[0].building.floors[0].occupancies[0].builtUpArea"
+                }
+              },
+              {
+                "variable": "leftSetBack",
+                "value": {
+                  "path": "$.edcrDetail[0].planDetail.blocks[0].setBacks[0].sideYard1.area"
+                }
+              },
+              {
+                "variable": "coverage",
+                "value": {
+                  "path": "$.edcrDetail[0].planDetail.coverage"
+                }
+              },
+              {
+                "variable": "buildingHeight",
+                "value": {
+                  "path": "$.edcrDetail[0].planDetail.blocks[0].building.buildingHeight"
+                }
+              },
+              {
+                "variable": "wardNo",
+                "value": {
+                  "path": "$.edcrDetail[0].planDetail.planInfoProperties.WARD_NO"
+                }
+              },
+              {
+                "variable": "mouzaEDCR",
+                "value": {
+                  "path": "$.areaMapping.mouza"
+                }
+              },
+              {
+                "variable": "revenueVillage",
+                "value": {
+                  "path": "$.areaMapping.revenueVillage"
+                }
+              },
+              {
+                "variable": "dagNo",
+                "value": {
+                  "path": "$.edcrDetail[0].planDetail.planInfoProperties['DAG NO']"
+                }
+              },
+              {
+                "variable": "occupancy",
+                "value": {
+                  "path": "$.edcrDetail[0].planDetail.planInformation.occupancy"
+                }
+              },
+              {
                 "variable": "NOTE4",
                 "value": {
                   "path": "PDF_NOTE4"
