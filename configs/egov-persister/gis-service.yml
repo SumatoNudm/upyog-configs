@@ -6,12 +6,14 @@ serviceMaps:
       fromTopic: save-gis-log
       isTransaction: true
       queryMaps:
-        - query: INSERT INTO ug_gis_log (application_no, rtpi_id, file_store_id, tenant_id, status, response_status, response_json, createdby, createdtime, lastmodifiedby, lastmodifiedtime, details) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
+        - query: INSERT INTO ug_gis_log (application_no, rtpi_id, file_store_id, latitude, longitude, tenant_id, status, response_status, response_json, createdby, createdtime, lastmodifiedby, lastmodifiedtime, details) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
           basePath: $
           jsonMaps:
             - jsonPath: $.applicationNo
             - jsonPath: $.rtpiId
             - jsonPath: $.fileStoreId
+            - jsonPath: $.latitude
+            - jsonPath: $.longitude
             - jsonPath: $.tenantId
             - jsonPath: $.status
             - jsonPath: $.responseStatus
