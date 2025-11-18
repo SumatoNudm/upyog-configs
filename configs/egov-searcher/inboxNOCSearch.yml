@@ -8,10 +8,10 @@ SearchDefinitions:
     baseQuery: Select row_to_json(result) from
           (
           select DISTINCT(noc.applicationno) as applicationno,noc.createdtime as createdtime from eg_noc as noc
-          INNER JOIN eg_bpa_buildingplan as bpa ON noc.sourcerefid=bpa.applicationno
-          INNER JOIN eg_land_landInfo landinfo ON bpa.landId = landinfo.id
-          INNER JOIN eg_land_Address landaddress ON landinfo.id = landaddress.landInfoId
-          INNER JOIN eg_land_ownerInfo ownerinfo ON landinfo.id = ownerinfo.landInfoId
+          INNER JOIN ug_bpa_buildingplans as bpa ON noc.sourcerefid = bpa.application_no
+          INNER JOIN ug_land_info landinfo ON bpa.land_id = landinfo.id
+          INNER JOIN ug_land_address landaddress ON landinfo.id = landaddress.land_info_id
+          INNER JOIN ug_land_owner_info ownerinfo ON landinfo.id = ownerinfo.land_info_id
           INNER JOIN eg_wf_processinstance_v2 pi ON pi.businessid = noc.applicationno
           LEFT JOIN eg_wf_assignee_v2 assg ON pi.id = assg.processinstanceid
           $where
@@ -61,10 +61,10 @@ SearchDefinitions:
     baseQuery: SELECT row_to_json(TotalCount) from (SELECT COUNT(result) from
           (
           select DISTINCT(noc.applicationno) as applicationno,noc.createdtime as createdtime from eg_noc as noc
-          INNER JOIN eg_bpa_buildingplan as bpa ON noc.sourcerefid=bpa.applicationno
-          INNER JOIN eg_land_landInfo landinfo ON bpa.landId = landinfo.id
-          INNER JOIN eg_land_Address landaddress ON landinfo.id = landaddress.landInfoId
-          INNER JOIN eg_land_ownerInfo ownerinfo ON landinfo.id = ownerinfo.landInfoId
+          INNER JOIN ug_bpa_buildingplans as bpa ON noc.sourcerefid=bpa.application_no
+          INNER JOIN ug_land_info landinfo ON bpa.land_id = landinfo.id
+          INNER JOIN ug_land_address landaddress ON landinfo.id = landaddress.land_info_id
+          INNER JOIN ug_land_owner_info ownerinfo ON landinfo.id = ownerinfo.land_info_id
           INNER JOIN eg_wf_processinstance_v2 pi ON pi.businessid = noc.applicationno
           LEFT JOIN eg_wf_assignee_v2 assg ON pi.id = assg.processinstanceid
           $where
@@ -114,10 +114,10 @@ SearchDefinitions:
     baseQuery: Select row_to_json(result) from
           (
           select DISTINCT(noc.applicationno) as applicationno,noc.createdtime as createdtime from eg_noc as noc
-          INNER JOIN eg_bpa_buildingplan as bpa ON noc.sourcerefid=bpa.applicationno
-          INNER JOIN eg_land_landInfo landinfo ON bpa.landId = landinfo.id
-          INNER JOIN eg_land_Address landaddress ON landinfo.id = landaddress.landInfoId
-          INNER JOIN eg_land_ownerInfo ownerinfo ON landinfo.id = ownerinfo.landInfoId
+          INNER JOIN ug_bpa_buildingplans as bpa ON noc.sourcerefid=bpa.application_no
+          INNER JOIN ug_land_info landinfo ON bpa.land_id = landinfo.id
+          INNER JOIN ug_land_address landaddress ON landinfo.id = landaddress.land_info_id
+          INNER JOIN ug_land_owner_info ownerinfo ON landinfo.id = ownerinfo.land_info_id
           INNER JOIN eg_wf_processinstance_v2 pi ON pi.businessid = noc.applicationno
           LEFT JOIN eg_wf_assignee_v2 assg ON pi.id = assg.processinstanceid
           $where
