@@ -276,3 +276,38 @@ serviceMaps:
       - jsonPath: $.BusinessServices.*.states.*.actions.*.auditDetails.lastModifiedBy
 
       - jsonPath: $.BusinessServices.*.states.*.actions.*.auditDetails.lastModifiedTime
+
+
+  - version: 1.0
+    description: Updates assignees for workflow process instance and cleans up transitions after first APPLY
+    fromTopic: update-wf-assignee
+    isTransaction: true
+    queryMaps:
+
+    # Delete documents associated with transitions to be deleted
+    - query: DELETE FROM eg_wf_document_v2 WHERE processinstanceid IN (SELECT id FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action != 'APPLY' AND createdtime > (SELECT MIN(createdtime) FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action = 'APPLY'));
+      basePath: ProcessInstances.*
+      jsonMaps:
+      - jsonPath: $.ProcessInstances.*.businessId
+      - jsonPath: $.ProcessInstances.*.tenantId
+      - jsonPath: $.ProcessInstances.*.businessId
+      - jsonPath: $.ProcessInstances.*.tenantId
+
+    # Delete transitions after first APPLY
+    - query: DELETE FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action != 'APPLY' AND createdtime > (SELECT MIN(createdtime) FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action = 'APPLY');
+      basePath: ProcessInstances.*
+      jsonMaps:
+      - jsonPath: $.ProcessInstances.*.businessId
+      - jsonPath: $.ProcessInstances.*.tenantId
+      - jsonPath: $.ProcessInstances.*.businessId
+      - jsonPath: $.ProcessInstances.*.tenantId
+
+    # Updates all assignee rows for the processinstanceid
+    - query: UPDATE eg_wf_assignee_v2 SET assignee = ?, lastmodifiedby = ?, lastmodifiedtime = ? WHERE processinstanceid = ? AND tenantid = ?;
+      basePath: ProcessInstances.*
+      jsonMaps:
+      - jsonPath: $.ProcessInstances.*.assignes[0].uuid
+      - jsonPath: $.ProcessInstances.*.auditDetails.lastModifiedBy
+      - jsonPath: $.ProcessInstances.*.auditDetails.lastModifiedTime
+      - jsonPath: $.ProcessInstances.*.id
+      - jsonPath: $.ProcessInstances.*.tenantId
