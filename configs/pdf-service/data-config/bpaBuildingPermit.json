@@ -14,7 +14,7 @@
               {
                 "variable": "GOVERNMENT_OF_ASSAM",
                 "value": {
-                  "path": "PDF_GOVERNMENT_OF_ASSAM"
+                  "path": "PDF_BP_GOVERNMENT_OF_ASSAM"
                 },
                 "type": "label",
                 "localisation": {
@@ -26,7 +26,7 @@
               {
                 "variable": "DEPARTMENT_OF_HOUSING_AND_AFFAIRS",
                 "value": {
-                  "path": "PDF_DEPARTMENT_OF_HOUSING_AND_AFFAIRS"
+                  "path": "PDF_BP_DEPARTMENT_OF_HOUSING_AND_AFFAIRS"
                 },
                 "type": "label",
                 "localisation": {
@@ -38,7 +38,7 @@
               {
                 "variable": "MUNICIPAL_BOARD",
                 "value": {
-                  "path": "PDF_MUNICIPAL_BOARD"
+                  "path": "PDF_BP_MUNICIPAL_BOARD"
                 },
                 "type": "label",
                 "localisation": {
@@ -68,7 +68,7 @@
               {
                 "variable": "FORM3",
                 "value": {
-                  "path": "PDF_FORM3"
+                  "path": "PDF_BP_FORM3"
                 },
                 "type": "label",
                 "localisation": {
@@ -80,7 +80,7 @@
               {
                 "variable": "BUILDING_PERMIT",
                 "value": {
-                  "path": "PDF_BUILDING_PERMIT"
+                  "path": "PDF_BP_BUILDING_PERMIT"
                 },
                 "type": "label",
                 "localisation": {
@@ -92,7 +92,7 @@
               {
                 "variable": "ISSUED_UNDER_BY_LAW5",
                 "value": {
-                  "path": "PDF_ISSUED_UNDER_BY_LAW5"
+                  "path": "PDF_BP_ISSUED_UNDER_BY_LAW5"
                 },
                 "type": "label",
                 "localisation": {
@@ -104,7 +104,7 @@
               {
                 "variable": "BP_NO",
                 "value": {
-                  "path": "PDF_BP_NO"
+                  "path": "PDF_BP_BP_NO"
                 },
                 "type": "label",
                 "localisation": {
@@ -122,7 +122,7 @@
               {
                 "variable": "Dated",
                 "value": {
-                  "path": "PDF_DATED"
+                  "path": "PDF_BP_DATED"
                 },
                 "type": "label",
                 "localisation": {
@@ -134,7 +134,7 @@
               {
                 "variable": "to",
                 "value": {
-                  "path": "PDF_TO"
+                  "path": "PDF_BP_TO"
                 },
                 "type": "label",
                 "localisation": {
@@ -159,7 +159,7 @@
               {
                 "variable": "sub",
                 "value": {
-                  "path": "PDF_SUB"
+                  "path": "PDF_BP_SUB"
                 },
                 "type": "label",
                 "localisation": {
@@ -171,7 +171,7 @@
               {
                 "variable": "NO_OBJECTION_CERTIFICATION",
                 "value": {
-                  "path": "PDF_NO_OBJECTION_CERTIFICATION"
+                  "path": "PDF_BP_NO_OBJECTION_CERTIFICATION"
                 },
                 "type": "label",
                 "localisation": {
@@ -183,7 +183,7 @@
               {
                 "variable": "ref",
                 "value": {
-                  "path": "PDF_REF"
+                  "path": "PDF_BP_REF"
                 },
                 "type": "label",
                 "localisation": {
@@ -195,7 +195,7 @@
               {
                 "variable": "dated",
                 "value": {
-                  "path": "PDF_DATEDD"
+                  "path": "PDF_BP_DATEDD"
                 },
                 "type": "label",
                 "localisation": {
@@ -207,7 +207,7 @@
               {
                 "variable": "submittedBy",
                 "value": {
-                  "path": "PDF_SUBMITTED_BY"
+                  "path": "PDF_BP_SUBMITTED_BY"
                 },
                 "type": "label",
                 "localisation": {
@@ -219,7 +219,7 @@
               {
                 "variable": "throghtRTP",
                 "value": {
-                  "path": "PDF_THROUGH_RTP"
+                  "path": "PDF_BP_THROUGH_RTP"
                 },
                 "type": "label",
                 "localisation": {
@@ -231,7 +231,7 @@
               {
                 "variable": "planningPermitNo",
                 "value": {
-                  "path": "PDF_PLANNING_PERMIT_NO"
+                  "path": "PDF_BP_PLANNING_PERMIT_NO"
                 },
                 "type": "label",
                 "localisation": {
@@ -249,7 +249,7 @@
               {
                 "variable": "uptoFloorOnly",
                 "value": {
-                  "path": "PDF_UPTO_FLOOR_ONLY"
+                  "path": "PDF_BP_UPTO_FLOOR_ONLY"
                 },
                 "type": "label",
                 "localisation": {
@@ -261,7 +261,7 @@
               {
                 "variable": "sir/madam",
                 "value": {
-                  "path": "PDF_SIR_MADAM"
+                  "path": "PDF_BP_SIR_MADAM"
                 },
                 "type": "label",
                 "localisation": {
@@ -273,7 +273,7 @@
               {
                 "variable": "withReference",
                 "value": {
-                  "path": "PDF_WITH_REFERENCE_TO_ABOVE_APPLICATION"
+                  "path": "PDF_BP_WITH_REFERENCE_TO_ABOVE_APPLICATION"
                 },
                 "type": "label",
                 "localisation": {
@@ -285,7 +285,7 @@
               {
                 "variable": "isHereByAccorded",
                 "value": {
-                  "path": "PDF_IS_HEREBY_ACCORDED"
+                  "path": "PDF_BP_IS_HEREBY_ACCORDED"
                 },
                 "type": "label",
                 "localisation": {
@@ -297,7 +297,7 @@
               {
                 "variable": "PROPOSED_USE",
                 "value": {
-                  "path": "PDF_PROPOSED_USE"
+                  "path": "PDF_BP_PROPOSED_USE"
                 },
                 "type": "label",
                 "localisation": {
@@ -309,7 +309,7 @@
               {
                 "variable": "ZONE",
                 "value": {
-                  "path": "PDF_ZONE"
+                  "path": "PDF_BP_ZONE"
                 },
                 "type": "label",
                 "localisation": {
@@ -321,7 +321,7 @@
               {
                 "variable": "TYPE_OF_CONSTRUCTION",
                 "value": {
-                  "path": "PDF_TYPE_OF_CONSTRUCTION"
+                  "path": "PDF_BP_TYPE_OF_CONSTRUCTION"
                 },
                 "type": "label",
                 "localisation": {
@@ -333,7 +333,7 @@
               {
                 "variable": "DETAILS_OF_LAND",
                 "value": {
-                  "path": "PDF_DETAILS_OF_LAND"
+                  "path": "PDF_BP_DETAILS_OF_LAND"
                 },
                 "type": "label",
                 "localisation": {
@@ -345,7 +345,7 @@
               {
                 "variable": "DAG_NO",
                 "value": {
-                  "path": "PDF_DAG_NO"
+                  "path": "PDF_BP_DAG_NO"
                 },
                 "type": "label",
                 "localisation": {
@@ -357,7 +357,7 @@
               {
                 "variable": "PATTA_NO",
                 "value": {
-                  "path": "PDF_PATTA_NO"
+                  "path": "PDF_BP_PATTA_NO"
                 },
                 "type": "label",
                 "localisation": {
@@ -369,7 +369,7 @@
               {
                 "variable": "WARD_NO",
                 "value": {
-                  "path": "PDF_WARD_NO"
+                  "path": "PDF_BP_WARD_NO"
                 },
                 "type": "label",
                 "localisation": {
@@ -381,7 +381,7 @@
               {
                 "variable": "NAME_OF_ROAD",
                 "value": {
-                  "path": "PDF_NAME_OF_ROAD"
+                  "path": "PDF_BP_NAME_OF_ROAD"
                 },
                 "type": "label",
                 "localisation": {
@@ -393,7 +393,7 @@
               {
                 "variable": "VILLAGE",
                 "value": {
-                  "path": "PDF_VILLAGE"
+                  "path": "PDF_BP_VILLAGE"
                 },
                 "type": "label",
                 "localisation": {
@@ -405,7 +405,7 @@
               {
                 "variable": "MOUZA",
                 "value": {
-                  "path": "PDF_MOUZA"
+                  "path": "PDF_BP_MOUZA"
                 },
                 "type": "label",
                 "localisation": {
@@ -417,7 +417,7 @@
               {
                 "variable": "LENGTH_OF_BWALL",
                 "value": {
-                  "path": "PDF_LENGTH_OF_BWALL"
+                  "path": "PDF_BP_LENGTH_OF_BWALL"
                 },
                 "type": "label",
                 "localisation": {
@@ -429,7 +429,7 @@
               {
                 "variable": "HEIGHT_OF_BWALL",
                 "value": {
-                  "path": "PDF_HEIGHT_OF_BWALL"
+                  "path": "PDF_BP_HEIGHT_OF_BWALL"
                 },
                 "type": "label",
                 "localisation": {
@@ -441,7 +441,7 @@
               {
                 "variable": "PARAMETER",
                 "value": {
-                  "path": "PDF_PARAMETER"
+                  "path": "PDF_BP_PARAMETER"
                 },
                 "type": "label",
                 "localisation": {
@@ -453,7 +453,7 @@
               {
                 "variable": "APPROVED",
                 "value": {
-                  "path": "PDF_APPROVED"
+                  "path": "PDF_BP_APPROVED"
                 },
                 "type": "label",
                 "localisation": {
@@ -465,7 +465,7 @@
               {
                 "variable": "BUILDING_NAME",
                 "value": {
-                  "path": "PDF_BUILDING_NAME"
+                  "path": "PDF_BP_BUILDING_NAME"
                 },
                 "type": "label",
                 "localisation": {
@@ -477,7 +477,7 @@
               {
                 "variable": "BUILDING_HEIGHT",
                 "value": {
-                  "path": "PDF_BUILDING_HEIGHT"
+                  "path": "PDF_BP_BUILDING_HEIGHT"
                 },
                 "type": "label",
                 "localisation": {
@@ -489,7 +489,7 @@
               {
                 "variable": "MARGIN_FRONT",
                 "value": {
-                  "path": "PDF_MARGIN_FRONT"
+                  "path": "PDF_BP_MARGIN_FRONT"
                 },
                 "type": "label",
                 "localisation": {
@@ -501,7 +501,7 @@
               {
                 "variable": "MARGIN_REAR",
                 "value": {
-                  "path": "PDF_MARGIN_REAR"
+                  "path": "PDF_BP_MARGIN_REAR"
                 },
                 "type": "label",
                 "localisation": {
@@ -513,7 +513,7 @@
               {
                 "variable": "MARGIN_SIDE1",
                 "value": {
-                  "path": "PDF_MARGIN_SIDE1"
+                  "path": "PDF_BP_MARGIN_SIDE1"
                 },
                 "type": "label",
                 "localisation": {
@@ -525,7 +525,7 @@
               {
                 "variable": "MARGIN_SIDE2",
                 "value": {
-                  "path": "PDF_MARGIN_SIDE2"
+                  "path": "PDF_BP_MARGIN_SIDE2"
                 },
                 "type": "label",
                 "localisation": {
@@ -537,7 +537,7 @@
               {
                 "variable": "CANTILEVER_NORTH",
                 "value": {
-                  "path": "PDF_CANTILEVER_NORTH"
+                  "path": "PDF_BP_CANTILEVER_NORTH"
                 },
                 "type": "label",
                 "localisation": {
@@ -549,7 +549,7 @@
               {
                 "variable": "CANTILEVER_WEST",
                 "value": {
-                  "path": "PDF_CANTILEVER_WEST"
+                  "path": "PDF_BP_CANTILEVER_WEST"
                 },
                 "type": "label",
                 "localisation": {
@@ -561,7 +561,7 @@
               {
                 "variable": "CANTILEVER_EAST",
                 "value": {
-                  "path": "PDF_CANTILEVER_EAST"
+                  "path": "PDF_BP_CANTILEVER_EAST"
                 },
                 "type": "label",
                 "localisation": {
@@ -573,7 +573,7 @@
               {
                 "variable": "CANTILEVER_SOUTH",
                 "value": {
-                  "path": "PDF_CANTILEVER_SOUTH"
+                  "path": "PDF_BP_CANTILEVER_SOUTH"
                 },
                 "type": "label",
                 "localisation": {
@@ -585,7 +585,7 @@
               {
                 "variable": "FLOOR_NAME",
                 "value": {
-                  "path": "PDF_FLOOR_NAME"
+                  "path": "PDF_BP_FLOOR_NAME"
                 },
                 "type": "label",
                 "localisation": {
@@ -597,7 +597,7 @@
               {
                 "variable": "AREA",
                 "value": {
-                  "path": "PDF_AREA"
+                  "path": "PDF_BP_AREA"
                 },
                 "type": "label",
                 "localisation": {
@@ -609,7 +609,7 @@
               {
                 "variable": "FLOOR_GROUND",
                 "value": {
-                  "path": "PDF_FLOOR_GROUND"
+                  "path": "PDF_BP_FLOOR_GROUND"
                 },
                 "type": "label",
                 "localisation": {
@@ -621,7 +621,7 @@
               {
                 "variable": "FLOOR_FIRST",
                 "value": {
-                  "path": "PDF_FLOOR_FIRST"
+                  "path": "PDF_BP_FLOOR_FIRST"
                 },
                 "type": "label",
                 "localisation": {
@@ -633,7 +633,7 @@
               {
                 "variable": "FLOOR_SECOND",
                 "value": {
-                  "path": "PDF_FLOOR_SECOND"
+                  "path": "PDF_BP_FLOOR_SECOND"
                 },
                 "type": "label",
                 "localisation": {
@@ -645,7 +645,7 @@
               {
                 "variable": "FLOOR_THIRD",
                 "value": {
-                  "path": "PDF_FLOOR_THIRD"
+                  "path": "PDF_BP_FLOOR_THIRD"
                 },
                 "type": "label",
                 "localisation": {
@@ -657,7 +657,7 @@
               {
                 "variable": "FLOOR_FORTH",
                 "value": {
-                  "path": "PDF_FLOOR_FORTH"
+                  "path": "PDF_BP_FLOOR_FORTH"
                 },
                 "type": "label",
                 "localisation": {
@@ -669,7 +669,7 @@
               {
                 "variable": "FLOOR_FIFTH",
                 "value": {
-                  "path": "PDF_FLOOR_FIFTH"
+                  "path": "PDF_BP_FLOOR_FIFTH"
                 },
                 "type": "label",
                 "localisation": {
@@ -681,7 +681,7 @@
               {
                 "variable": "FLOOR_SIXTH",
                 "value": {
-                  "path": "PDF_FLOOR_SIXTH"
+                  "path": "PDF_BP_FLOOR_SIXTH"
                 },
                 "type": "label",
                 "localisation": {
@@ -693,7 +693,7 @@
               {
                 "variable": "GEO_CORDINATES",
                 "value": {
-                  "path": "PDF_GEO_CORDINATES"
+                  "path": "PDF_BP_GEO_CORDINATES"
                 },
                 "type": "label",
                 "localisation": {
@@ -705,7 +705,7 @@
               {
                 "variable": "LATITUDE",
                 "value": {
-                  "path": "PDF_LATITUDE"
+                  "path": "PDF_BP_LATITUDE"
                 },
                 "type": "label",
                 "localisation": {
@@ -717,7 +717,7 @@
               {
                 "variable": "LONGITITUDE",
                 "value": {
-                  "path": "PDF_LONGITITUDE"
+                  "path": "PDF_BP_LONGITITUDE"
                 },
                 "type": "label",
                 "localisation": {
@@ -729,7 +729,7 @@
               {
                 "variable": "NO_OF_UNITS",
                 "value": {
-                  "path": "PDF_NO_OF_UNITS"
+                  "path": "PDF_BP_NO_OF_UNITS"
                 },
                 "type": "label",
                 "localisation": {
@@ -741,7 +741,7 @@
               {
                 "variable": "PARTICULARS_OF_DEMOLITION",
                 "value": {
-                  "path": "PDF_PARTICULARS_OF_DEMOLITION"
+                  "path": "PDF_BP_PARTICULARS_OF_DEMOLITION"
                 },
                 "type": "label",
                 "localisation": {
@@ -753,7 +753,7 @@
               {
                 "variable": "NO_OF_BLOCKS",
                 "value": {
-                  "path": "PDF_NO_OF_BLOCKS"
+                  "path": "PDF_BP_NO_OF_BLOCKS"
                 },
                 "type": "label",
                 "localisation": {
@@ -765,7 +765,7 @@
               {
                 "variable": "NO_OF_FLOORS",
                 "value": {
-                  "path": "PDF_NO_OF_FLOORS"
+                  "path": "PDF_BP_NO_OF_FLOORS"
                 },
                 "type": "label",
                 "localisation": {
@@ -777,7 +777,7 @@
               {
                 "variable": "AREA_OF_FLOORS",
                 "value": {
-                  "path": "PDF_AREA_OF_FLOORS"
+                  "path": "PDF_BP_AREA_OF_FLOORS"
                 },
                 "type": "label",
                 "localisation": {
@@ -789,7 +789,7 @@
               {
                 "variable": "BASEMENT",
                 "value": {
-                  "path": "PDF_BASEMENT"
+                  "path": "PDF_BP_BASEMENT"
                 },
                 "type": "label",
                 "localisation": {
@@ -801,7 +801,7 @@
               {
                 "variable": "GROUND",
                 "value": {
-                  "path": "PDF_GROUND"
+                  "path": "PDF_BP_GROUND"
                 },
                 "type": "label",
                 "localisation": {
@@ -813,7 +813,7 @@
               {
                 "variable": "MEZZ_FLOOR",
                 "value": {
-                  "path": "PDF_MEZZ_FLOOR"
+                  "path": "PDF_BP_MEZZ_FLOOR"
                 },
                 "type": "label",
                 "localisation": {
@@ -825,7 +825,7 @@
               {
                 "variable": "FIRST",
                 "value": {
-                  "path": "PDF_FIRST"
+                  "path": "PDF_BP_FIRST"
                 },
                 "type": "label",
                 "localisation": {
@@ -837,7 +837,7 @@
               {
                 "variable": "SECOND",
                 "value": {
-                  "path": "PDF_SECOND"
+                  "path": "PDF_BP_SECOND"
                 },
                 "type": "label",
                 "localisation": {
@@ -849,7 +849,7 @@
               {
                 "variable": "THIRD",
                 "value": {
-                  "path": "PDF_THIRD"
+                  "path": "PDF_BP_THIRD"
                 },
                 "type": "label",
                 "localisation": {
@@ -861,7 +861,7 @@
               {
                 "variable": "built_to_line",
                 "value": {
-                  "path": "PDF_BUILT_TO_LINE"
+                  "path": "PDF_BP_BUILT_TO_LINE"
                 },
                 "type": "label",
                 "localisation": {
@@ -873,7 +873,7 @@
               {
                 "variable": "remark",
                 "value": {
-                  "path": "PDF_REMARK"
+                  "path": "PDF_BP_REMARK"
                 },
                 "type": "label",
                 "localisation": {
@@ -885,7 +885,7 @@
               {
                 "variable": "remark_note",
                 "value": {
-                  "path": "PDF_REMARK_NOTE"
+                  "path": "PDF_BP_REMARK_NOTE"
                 },
                 "type": "label",
                 "localisation": {
@@ -897,7 +897,7 @@
               {
                 "variable": "ENCLOSURE_COPY_APPROVED_PLAN",
                 "value": {
-                  "path": "PDF_ENCLOSURE_COPY_APPROVED_PLAN"
+                  "path": "PDF_BP_ENCLOSURE_COPY_APPROVED_PLAN"
                 },
                 "type": "label",
                 "localisation": {
@@ -909,7 +909,7 @@
               {
                 "variable": "MEMO_NO",
                 "value": {
-                  "path": "PDF_MEMO_NO"
+                  "path": "PDF_BP_MEMO_NO"
                 },
                 "type": "label",
                 "localisation": {
@@ -921,7 +921,7 @@
               {
                 "variable": "COPY_TO",
                 "value": {
-                  "path": "PDF_COPY_TO"
+                  "path": "PDF_BP_COPY_TO"
                 },
                 "type": "label",
                 "localisation": {
@@ -933,7 +933,7 @@
               {
                 "variable": "CHAIRMAN_DEVELOPED_AUTHORITY",
                 "value": {
-                  "path": "PDF_CHAIRMAN_DEVELOPED_AUTHORITY"
+                  "path": "PDF_BP_CHAIRMAN_DEVELOPED_AUTHORITY"
                 },
                 "type": "label",
                 "localisation": {
@@ -945,7 +945,7 @@
               {
                 "variable": "DEPUTY_DIRECTOR_ASSISTANT_DIRECTOR",
                 "value": {
-                  "path": "PDF_DEPUTY_DIRECTOR_ASSISTANT_DIRECTOR"
+                  "path": "PDF_BP_DEPUTY_DIRECTOR_ASSISTANT_DIRECTOR"
                 },
                 "type": "label",
                 "localisation": {
@@ -957,7 +957,7 @@
               {
                 "variable": "THE_SECURITY_REAR_ESTATE",
                 "value": {
-                  "path": "PDF_THE_SECURITY_REAR_ESTATE"
+                  "path": "PDF_BP_THE_SECURITY_REAR_ESTATE"
                 },
                 "type": "label",
                 "localisation": {
@@ -969,7 +969,7 @@
               {
                 "variable": "NAME_OF_ARCHITECT",
                 "value": {
-                  "path": "PDF_NAME_OF_ARCHITECT"
+                  "path": "PDF_BP_NAME_OF_ARCHITECT"
                 },
                 "type": "label",
                 "localisation": {
@@ -981,7 +981,7 @@
               {
                 "variable": "RTP_NAME",
                 "value": {
-                  "path": "PDF_RTP_NAME"
+                  "path": "PDF_BP_RTP_NAME"
                 },
                 "type": "label",
                 "localisation": {
@@ -993,7 +993,7 @@
               {
                 "variable": "FOR_INFORMATION_AND_NECESSARY_ACTION",
                 "value": {
-                  "path": "PDF_FOR_INFORMATION_AND_NECESSARY_ACTION"
+                  "path": "PDF_BP_FOR_INFORMATION_AND_NECESSARY_ACTION"
                 },
                 "type": "label",
                 "localisation": {
@@ -1005,7 +1005,7 @@
               {
                 "variable": "Sd",
                 "value": {
-                  "path": "PDF_SD"
+                  "path": "PDF_BP_SD"
                 },
                 "type": "label",
                 "localisation": {
@@ -1017,7 +1017,7 @@
               {
                 "variable": "CHAIRMAN",
                 "value": {
-                  "path": "PDF_CHAIRMAN"
+                  "path": "PDF_BP_CHAIRMAN"
                 },
                 "type": "label",
                 "localisation": {
@@ -1029,7 +1029,7 @@
               {
                 "variable": "APPROVED_BY",
                 "value": {
-                  "path": "PDF_APPROVED_BY"
+                  "path": "PDF_BP_APPROVED_BY"
                 },
                 "type": "label",
                 "localisation": {
@@ -1041,7 +1041,7 @@
               {
                 "variable": "NOTE",
                 "value": {
-                  "path": "PDF_NOTE"
+                  "path": "PDF_BP_NOTE"
                 },
                 "type": "label",
                 "localisation": {
@@ -1053,7 +1053,7 @@
               {
                 "variable": "NOTE1",
                 "value": {
-                  "path": "PDF_NOTE1"
+                  "path": "PDF_BP_NOTE1"
                 },
                 "type": "label",
                 "localisation": {
@@ -1065,7 +1065,7 @@
               {
                 "variable": "NOTE2",
                 "value": {
-                  "path": "PDF_NOTE2"
+                  "path": "PDF_BP_NOTE2"
                 },
                 "type": "label",
                 "localisation": {
@@ -1077,7 +1077,7 @@
               {
                 "variable": "NOTE3",
                 "value": {
-                  "path": "PDF_NOTE3"
+                  "path": "PDF_BP_NOTE3"
                 },
                 "type": "label",
                 "localisation": {
@@ -1185,7 +1185,7 @@
               {
                 "variable": "NOTE4",
                 "value": {
-                  "path": "PDF_NOTE4"
+                  "path": "PDF_BP_NOTE4"
                 },
                 "type": "label",
                 "localisation": {
@@ -1197,7 +1197,7 @@
               {
                 "variable": "NOTE5",
                 "value": {
-                  "path": "PDF_NOTE5"
+                  "path": "PDF_BP_NOTE5"
                 },
                 "type": "label",
                 "localisation": {
@@ -1209,7 +1209,7 @@
               {
                 "variable": "NOTE6",
                 "value": {
-                  "path": "PDF_NOTE6"
+                  "path": "PDF_BP_NOTE6"
                 },
                 "type": "label",
                 "localisation": {
@@ -1221,7 +1221,7 @@
               {
                 "variable": "NOTE7",
                 "value": {
-                  "path": "PDF_NOTE7"
+                  "path": "PDF_BP_NOTE7"
                 },
                 "type": "label",
                 "localisation": {
@@ -1233,7 +1233,7 @@
               {
                 "variable": "NOTE8",
                 "value": {
-                  "path": "PDF_NOTE8"
+                  "path": "PDF_BP_NOTE8"
                 },
                 "type": "label",
                 "localisation": {
@@ -1245,7 +1245,7 @@
               {
                 "variable": "CONDITION",
                 "value": {
-                  "path": "PDF_CONDITION"
+                  "path": "PDF_BP_CONDITION"
                 },
                 "type": "label",
                 "localisation": {
@@ -1257,7 +1257,7 @@
               {
                 "variable": "CONDITION1",
                 "value": {
-                  "path": "PDF_CONDITION1"
+                  "path": "PDF_BP_CONDITION1"
                 },
                 "type": "label",
                 "localisation": {
@@ -1269,7 +1269,7 @@
               {
                 "variable": "CONDITION2",
                 "value": {
-                  "path": "PDF_CONDITION2"
+                  "path": "PDF_BP_CONDITION2"
                 },
                 "type": "label",
                 "localisation": {
@@ -1281,7 +1281,7 @@
               {
                 "variable": "CONDITION3",
                 "value": {
-                  "path": "PDF_CONDITION3"
+                  "path": "PDF_BP_CONDITION3"
                 },
                 "type": "label",
                 "localisation": {
@@ -1293,7 +1293,7 @@
               {
                 "variable": "CONDITION4",
                 "value": {
-                  "path": "PDF_CONDITION4"
+                  "path": "PDF_BP_CONDITION4"
                 },
                 "type": "label",
                 "localisation": {
@@ -1305,7 +1305,7 @@
               {
                 "variable": "CONDITION5",
                 "value": {
-                  "path": "PDF_CONDITION5"
+                  "path": "PDF_BP_CONDITION5"
                 },
                 "type": "label",
                 "localisation": {
@@ -1317,7 +1317,7 @@
               {
                 "variable": "CONDITION6",
                 "value": {
-                  "path": "PDF_CONDITION6"
+                  "path": "PDF_BP_CONDITION6"
                 },
                 "type": "label",
                 "localisation": {
@@ -1329,7 +1329,7 @@
               {
                 "variable": "CONDITION7",
                 "value": {
-                  "path": "PDF_CONDITION7"
+                  "path": "PDF_BP_CONDITION7"
                 },
                 "type": "label",
                 "localisation": {
@@ -1341,7 +1341,7 @@
               {
                 "variable": "CONDITION8",
                 "value": {
-                  "path": "PDF_CONDITION8"
+                  "path": "PDF_BP_CONDITION8"
                 },
                 "type": "label",
                 "localisation": {
@@ -1353,7 +1353,7 @@
               {
                 "variable": "CONDITION9",
                 "value": {
-                  "path": "PDF_CONDITION9"
+                  "path": "PDF_BP_CONDITION9"
                 },
                 "type": "label",
                 "localisation": {
@@ -1365,7 +1365,7 @@
               {
                 "variable": "CONDITION10",
                 "value": {
-                  "path": "PDF_CONDITION10"
+                  "path": "PDF_BP_CONDITION10"
                 },
                 "type": "label",
                 "localisation": {
@@ -1377,7 +1377,7 @@
               {
                 "variable": "CONDITION11",
                 "value": {
-                  "path": "PDF_CONDITION11"
+                  "path": "PDF_BP_CONDITION11"
                 },
                 "type": "label",
                 "localisation": {
@@ -1389,7 +1389,7 @@
               {
                 "variable": "CONDITION12",
                 "value": {
-                  "path": "PDF_CONDITION12"
+                  "path": "PDF_BP_CONDITION12"
                 },
                 "type": "label",
                 "localisation": {
