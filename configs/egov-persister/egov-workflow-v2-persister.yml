@@ -279,13 +279,22 @@ serviceMaps:
 
 
   - version: 1.0
-    description: Updates assignees for workflow process instance and cleans up transitions after first APPLY
+    description: Updates assignees for workflow process instance and cleans up transitions after first APPLY in process instance, documents and assignees tables
     fromTopic: update-wf-assignee
     isTransaction: true
     queryMaps:
 
     # Delete documents associated with transitions to be deleted
     - query: DELETE FROM eg_wf_document_v2 WHERE processinstanceid IN (SELECT id FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action != 'APPLY' AND createdtime > (SELECT MIN(createdtime) FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action = 'APPLY'));
+      basePath: ProcessInstances.*
+      jsonMaps:
+      - jsonPath: $.ProcessInstances.*.businessId
+      - jsonPath: $.ProcessInstances.*.tenantId
+      - jsonPath: $.ProcessInstances.*.businessId
+      - jsonPath: $.ProcessInstances.*.tenantId
+
+    # Delete existing assignee rows after first APPLY
+    - query: DELETE FROM eg_wf_assignee_v2 WHERE processinstanceid in (SELECT id FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action != 'APPLY'AND createdtime > (SELECT MIN(createdtime) FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action = 'APPLY'));
       basePath: ProcessInstances.*
       jsonMaps:
       - jsonPath: $.ProcessInstances.*.businessId
@@ -303,11 +312,11 @@ serviceMaps:
       - jsonPath: $.ProcessInstances.*.tenantId
 
     # Updates all assignee rows for the processinstanceid
-    - query: UPDATE eg_wf_assignee_v2 SET assignee = ?, lastmodifiedby = ?, lastmodifiedtime = ? WHERE processinstanceid = ? AND tenantid = ?;
+    - query: UPDATE eg_wf_assignee_v2 SET assignee = ?, lastmodifiedby = ?, lastmodifiedtime = ? WHERE processinstanceid in (SELECT id FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action = 'APPLY');
       basePath: ProcessInstances.*
       jsonMaps:
       - jsonPath: $.ProcessInstances.*.assignes[0].uuid
       - jsonPath: $.ProcessInstances.*.auditDetails.lastModifiedBy
       - jsonPath: $.ProcessInstances.*.auditDetails.lastModifiedTime
-      - jsonPath: $.ProcessInstances.*.id
+      - jsonPath: $.ProcessInstances.*.businessId
       - jsonPath: $.ProcessInstances.*.tenantId
