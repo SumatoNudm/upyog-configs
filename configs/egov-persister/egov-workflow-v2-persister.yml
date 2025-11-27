@@ -299,7 +299,7 @@ serviceMaps:
       - jsonPath: $.ProcessInstances.*.tenantId
 
     # Delete transitions after first APPLY
-    - query: DELETE FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action != 'APPLY' );
+    - query: DELETE FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action != 'APPLY';
       basePath: ProcessInstances.*
       jsonMaps:
       - jsonPath: $.ProcessInstances.*.businessId
