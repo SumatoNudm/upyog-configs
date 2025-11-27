@@ -315,7 +315,7 @@ serviceMaps:
     - query: UPDATE eg_wf_assignee_v2 SET assignee = ?, lastmodifiedby = ?, lastmodifiedtime = ? WHERE processinstanceid in (SELECT id FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action = 'APPLY');
       basePath: ProcessInstances.*
       jsonMaps:
-      - jsonPath: $.ProcessInstances.*.assignes[0].uuid
+      - jsonPath: $.ProcessInstances.*.assignes.*.uuid
       - jsonPath: $.ProcessInstances.*.auditDetails.lastModifiedBy
       - jsonPath: $.ProcessInstances.*.auditDetails.lastModifiedTime
       - jsonPath: $.ProcessInstances.*.businessId
