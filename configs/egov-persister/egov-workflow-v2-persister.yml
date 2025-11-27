@@ -285,35 +285,29 @@ serviceMaps:
     queryMaps:
 
     # Delete documents associated with transitions to be deleted
-    - query: DELETE FROM eg_wf_document_v2 WHERE processinstanceid IN (SELECT id FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action != 'APPLY' AND createdtime > (SELECT MIN(createdtime) FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action = 'APPLY'));
+    - query: DELETE FROM eg_wf_document_v2 WHERE processinstanceid IN (SELECT id FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action != 'APPLY' );
       basePath: ProcessInstances.*
       jsonMaps:
-      - jsonPath: $.ProcessInstances.*.businessId
-      - jsonPath: $.ProcessInstances.*.tenantId
       - jsonPath: $.ProcessInstances.*.businessId
       - jsonPath: $.ProcessInstances.*.tenantId
 
     # Delete existing assignee rows after first APPLY
-    - query: DELETE FROM eg_wf_assignee_v2 WHERE processinstanceid in (SELECT id FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action != 'APPLY'AND createdtime > (SELECT MIN(createdtime) FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action = 'APPLY'));
+    - query: DELETE FROM eg_wf_assignee_v2 WHERE processinstanceid in (SELECT id FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action != 'APPLY' );
       basePath: ProcessInstances.*
       jsonMaps:
-      - jsonPath: $.ProcessInstances.*.businessId
-      - jsonPath: $.ProcessInstances.*.tenantId
       - jsonPath: $.ProcessInstances.*.businessId
       - jsonPath: $.ProcessInstances.*.tenantId
 
     # Delete transitions after first APPLY
-    - query: DELETE FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action != 'APPLY' AND createdtime > (SELECT MIN(createdtime) FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action = 'APPLY');
+    - query: DELETE FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action != 'APPLY';
       basePath: ProcessInstances.*
       jsonMaps:
-      - jsonPath: $.ProcessInstances.*.businessId
-      - jsonPath: $.ProcessInstances.*.tenantId
       - jsonPath: $.ProcessInstances.*.businessId
       - jsonPath: $.ProcessInstances.*.tenantId
 
     # Updates all assignee rows for the processinstanceid
     - query: UPDATE eg_wf_assignee_v2 SET assignee = ?, lastmodifiedby = ?, lastmodifiedtime = ? WHERE processinstanceid in (SELECT id FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action = 'APPLY');
-      basePath: ProcessInstances.*
+      basePath: ProcessInstances.*.assignes.*
       jsonMaps:
       - jsonPath: $.ProcessInstances.*.assignes.*.uuid
       - jsonPath: $.ProcessInstances.*.auditDetails.lastModifiedBy
