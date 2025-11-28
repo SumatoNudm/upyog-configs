@@ -284,6 +284,16 @@ serviceMaps:
     isTransaction: true
     queryMaps:
 
+    # Updates assignee row for the processinstanceid
+    - query: UPDATE eg_wf_assignee_v2 SET assignee = ?, lastmodifiedby = ?, lastmodifiedtime = ? WHERE processinstanceid in (SELECT id FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action = 'APPLY');
+      basePath: ProcessInstances.*
+      jsonMaps:
+      - jsonPath: $.ProcessInstances[*][?(@.id == "{id}")].assignes[*].uuid
+      - jsonPath: $.ProcessInstances.*.auditDetails.lastModifiedBy
+      - jsonPath: $.ProcessInstances.*.auditDetails.lastModifiedTime
+      - jsonPath: $.ProcessInstances.*.businessId
+      - jsonPath: $.ProcessInstances.*.tenantId
+
     # Delete documents associated with transitions to be deleted
     - query: DELETE FROM eg_wf_document_v2 WHERE processinstanceid IN (SELECT id FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action != 'APPLY' );
       basePath: ProcessInstances.*
@@ -305,12 +315,3 @@ serviceMaps:
       - jsonPath: $.ProcessInstances.*.businessId
       - jsonPath: $.ProcessInstances.*.tenantId
 
-    # Updates all assignee rows for the processinstanceid
-    - query: UPDATE eg_wf_assignee_v2 SET assignee = ?, lastmodifiedby = ?, lastmodifiedtime = ? WHERE processinstanceid in (SELECT id FROM eg_wf_processinstance_v2 WHERE businessid = ? AND tenantid = ? AND action = 'APPLY');
-      basePath: ProcessInstances.*.assignes.*
-      jsonMaps:
-      - jsonPath: $.ProcessInstances.*.assignes.*.uuid
-      - jsonPath: $.ProcessInstances.*.auditDetails.lastModifiedBy
-      - jsonPath: $.ProcessInstances.*.auditDetails.lastModifiedTime
-      - jsonPath: $.ProcessInstances.*.businessId
-      - jsonPath: $.ProcessInstances.*.tenantId
