@@ -52,51 +52,57 @@
             ]
           },
           {
-            "text": "{{to}}",
-            "style": "textStyles",
-            "alignment": "left"
-          },
-          {
-            "text": "{{applicantName}}",
-            "style": "textStyles",
-            "margin": [
-              10,
-              0,
-              0,
-              0
+            "columns": [
+              {
+                "width": "*",
+                "stack": [
+                  {
+                    "text": "{{to}}",
+                    "style": "textStyles",
+                    "alignment": "left"
+                  },
+                  {
+                    "text": "{{applicantName}}",
+                    "style": "textStyles",
+                    "margin": [10, 0, 0, 0]
+                  },
+                  {
+                    "text": "{{district}}, {{pincode}}, {{state}}",
+                    "style": "textStyles",
+                    "margin": [10, 0, 0, 0]
+                  },
+                  {
+                    "text": "{{sub}}:  {{NO_OBJECTION_CERTIFICATION}}",
+                    "fontSize": 10,
+                    "alignment": "left"
+                  },
+                  {
+                    "text": "{{ref}}:   1. {{applicatioNo}} {{dated}} {{date}}, {{submittedBy}} {{applicantName}} {{throughRTP}}",
+                    "fontSize": 10,
+                    "alignment": "left"
+                  },
+                  {
+                    "text": "2. {{planningPermitNo}} {{permitNumber}}, {{Dated}} {{date}}",
+                    "style": "textStyles",
+                    "alignment": "left",
+                    "margin": [50, 0, 0, 0]
+                  }
+                ]
+              },
+              {
+                "width": "auto",
+                "stack": [
+                  {
+                    "image": "{{qrcodeimage}}",
+                    "width": 70,
+                    "height": 70,
+                    "alignment": "right"
+                  }
+                ]
+              }
             ]
           },
-          {
-            "text": "{{district}}, {{pincode}}, {{state}}",
-            "style": "textStyles",
-            "margin": [
-              10,
-              0,
-              0,
-              0
-            ]
-          },
-          {
-            "text": "{{sub}}:  {{NO_OBJECTION_CERTIFICATION}}",
-            "fontSize": 10,
-            "alignment": "left"
-          },
-          {
-            "text": "{{ref}}:   1. {{applicatioNo}} {{dated}} {{date}}, {{submittedBy}} {{applicantName}} {{throughRTP}}",
-            "fontSize": 10,
-            "alignment": "left"
-          },
-          {
-            "text": "2. {{planningPermitNo}} {{permitNumber}}, {{Dated}} {{date}}",
-            "style": "textStyles",
-            "alignment": "left",
-            "margin": [
-              50,
-              0,
-              0,
-              0
-            ]
-          },
+          
           {
             "text": "{{uptoFloorOnly}}",
             "style": "header"
@@ -236,7 +242,7 @@
                         "style": "textStyles"
                       },
                       {
-                        "text": "",
+                        "text": "{{pattaNo}}",
                         "border": [
                           true,
                           true,
@@ -397,6 +403,7 @@
               }
             ]
           },
+          
           {
             "columns": [
               {
@@ -483,7 +490,7 @@
                         ]
                       },
                       {
-                        "text": "",
+                        "text": "{{buildingHeight}}",
                         "border": [
                           true,
                           true,
@@ -512,7 +519,7 @@
                         ]
                       },
                       {
-                        "text": "",
+                        "text": "{{frontSetBack}}",
                         "border": [
                           true,
                           true,
@@ -541,7 +548,7 @@
                         ]
                       },
                       {
-                        "text": "",
+                        "text": "{{rearSetBack}}",
                         "border": [
                           true,
                           true,
@@ -570,7 +577,7 @@
                         ]
                       },
                       {
-                        "text": "",
+                        "text": "{{rightSetBack}}",
                         "border": [
                           true,
                           true,
@@ -599,7 +606,7 @@
                         ]
                       },
                       {
-                        "text": "",
+                        "text": "{{leftSetBack}}",
                         "border": [
                           true,
                           true,
@@ -735,244 +742,6 @@
                     ],
                     [
                       {
-                        "text": "{{FLOOR_NAME}}",
-                        "bold": true,
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ],
-                        "alignment": "center"
-                      },
-                      {
-                        "text": "{{AREA}}",
-                        "bold": true,
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ],
-                        "alignment": "center"
-                      },
-                      {
-                        "text": "{{NO_OF_UNITS}}",
-                        "bold": true,
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ],
-                        "alignment": "center"
-                      }
-                    ],
-                    [
-                      {
-                        "text": "{{FLOOR_GROUND}}",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      },
-                      {
-                        "text": "",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      },
-                      {
-                        "text": "",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      }
-                    ],
-                    [
-                      {
-                        "text": "{{FLOOR_FIRST}}",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      },
-                      {
-                        "text": "",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      },
-                      {
-                        "text": "",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      }
-                    ],
-                    [
-                      {
-                        "text": "{{FLOOR_SECOND}}",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      },
-                      {
-                        "text": "",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      },
-                      {
-                        "text": "",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      }
-                    ],
-                    [
-                      {
-                        "text": "{{FLOOR_THIRD}}",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      },
-                      {
-                        "text": "",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      },
-                      {
-                        "text": "",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      }
-                    ],
-                    [
-                      {
-                        "text": "{{FLOOR_FORTH}}",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      },
-                      {
-                        "text": "",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      },
-                      {
-                        "text": "",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      }
-                    ],
-                    [
-                      {
-                        "text": "{{FLOOR_FIFTH}}",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      },
-                      {
-                        "text": "",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      },
-                      {
-                        "text": "",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      }
-                    ],
-                    [
-                      {
-                        "text": "{{FLOOR_SIXTH}}",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      },
-                      {
-                        "text": "",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      },
-                      {
-                        "text": "",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      }
-                    ],
-                    [
-                      {
                         "text": "{{GEO_CORDINATES}}",
                         "bold": true,
                         "border": [
@@ -1054,6 +823,46 @@
               }
             ]
           },
+          
+          {
+            "table": {
+             "widths": [
+               "*","*","*"
+             ],
+             "body": [
+               
+         [    
+          {
+            "text":"Floor Name",
+            "style":"amounts"
+          },    {
+                   "text": "Floor Area",
+                   "style":"amounts"
+                   
+                 },
+                 {
+                  "text":"No of Units",
+                  "style":"amounts"
+                }
+                
+           
+         ],
+         
+         "{{#var_floors}}[{\"text\":\"{{floorName}}\",\"style\":\"receipt-tablee\"},{\"text\":\"{{floorArea}}\",\"style\":\"receipt-tablee\"},{\"text\":\"{{noOfUnits}}\",\"style\":\"receipt-tablee\"}]{{/var_floors}}"
+     
+           
+       ]
+       },
+            "layout": {},
+            "alignment": "center",
+            "margin": [
+              20,
+              10,
+              3,
+              3
+            ],
+            "style": "textStyles"
+          },
           {
             "text": "{{built_to_line}}",
             "style": "textStyles"
@@ -1063,23 +872,14 @@
               {
                 "width": "100%",
                 "table": {
-                  "widths": [
-                    "30%",
-                    "40%",
-                    "30%"
-                  ],
+                  "widths": ["30%", "40%", "30%"],
                   "body": [
                     [
                       {
                         "text": "{{PARTICULARS_OF_DEMOLITION}}",
                         "colSpan": 3,
                         "bold": true,
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
+                        "border": [true, true, true, true]
                       },
                       {},
                       {}
@@ -1087,195 +887,56 @@
                     [
                       {
                         "text": "{{NO_OF_BLOCKS}}",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
+                        "border": [true, true, true, true]
                       },
                       {
-                        "text": "",
+                        "text": "{{noOfBlocks}}",
                         "colSpan": 2,
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
+                        "border": [true, true, true, true]
                       },
                       {}
                     ],
                     [
                       {
                         "text": "{{NO_OF_FLOORS}}",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
+                        "border": [true, true, true, true]
                       },
                       {
-                        "text": "",
+                        "text": "{{noOfFloors}}",
                         "colSpan": 2,
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
+                        "border": [true, true, true, true]
                       },
                       {}
                     ],
+          
                     [
                       {
                         "text": "{{AREA_OF_FLOORS}}",
-                        "rowSpan": 6,
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
+                        "border": [true, true, true, true],
+                        "bold": true
                       },
                       {
-                        "text": "{{BASEMENT}}",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
+                        "text": "Floor Name",
+                        "border": [true, true, true, true],
+                        "bold": true
                       },
                       {
-                        "text": "",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
+                        "text": "Area",
+                        "border": [true, true, true, true],
+                        "bold": true
                       }
                     ],
-                    [
-                      {},
-                      {
-                        "text": "{{GROUND}}",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      },
-                      {
-                        "text": "",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      }
-                    ],
-                    [
-                      {},
-                      {
-                        "text": "{{MEZZ_FLOOR}}",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      },
-                      {
-                        "text": "",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      }
-                    ],
-                    [
-                      {},
-                      {
-                        "text": "{{FIRST}}",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      },
-                      {
-                        "text": "",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      }
-                    ],
-                    [
-                      {},
-                      {
-                        "text": "{{SECOND}}",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      },
-                      {
-                        "text": "",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      }
-                    ],
-                    [
-                      {},
-                      {
-                        "text": "{{THIRD}}",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      },
-                      {
-                        "text": "",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ]
-                      }
-                    ]
+          
+                    "{{#var_floors}}[{\"text\":\"\",\"border\":[true,true,true,true]},{\"text\":\"{{floorName}}\",\"border\":[true,true,true,true]},{\"text\":\"{{floorArea}}\",\"border\":[true,true,true,true]}]{{/var_floors}}"
                   ]
                 },
                 "alignment": "center",
-                "margin": [
-                  20,
-                  10,
-                  3,
-                  3
-                ],
+                "margin": [20, 10, 3, 3],
                 "style": "textStyles"
               }
             ]
           },
+          
           {
             "table": {
               "widths": [
@@ -1553,7 +1214,35 @@
       },
       "textStyles": {
         "fontSize": 8
-      }
+      },
+      "receipt-tablee": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 8,
+        "fontWeight": 400,
+        "margin": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "amounts":
+     {
+         "fontSize": 9,
+         "bold":true,
+         "backgroundColor": "#D3D3D3"
+     },
+     "next-noc-table": {
+      "fontSize": 9,
+      "color": "#000000",
+      "margin": [
+        -25,
+        2,
+        -22,
+        5
+      ]
+    }
     }
   }
 }

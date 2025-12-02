@@ -1177,6 +1177,50 @@
                 }
               },
               {
+                "variable": "pattaNo",
+                "value": {
+                  "path": "$.landInfo.newPattaNumber"
+                }
+              },
+              {
+                "variable": "var_floors",                        
+                "value":{
+                  "path": "$.edcrDetail[0].planDetail.blocks[0].building.floors.*"
+                },
+                 "type":"array",
+                 "format":{                            
+                    "type":"string",
+                    "scema":[
+                      {
+                        "variable": "floorName",
+                        "value": "{index}"
+                      },
+                       {
+                          "variable":"floorArea",
+                          "value":"occupancies[0].builtUpArea"
+                       },
+                       {
+                        "variable":"noOfUnits",
+                        "value":"units.length"
+                     }
+                     
+
+                      ]
+                } 
+             },
+             {
+              "variable": "noOfBlocks",
+              "value": {
+                "path": "$.edcrDetail[0].planDetail.blocks.length"
+              }
+            },
+            {
+              "variable": "noOfFloors",
+              "value": {
+                "path": "$.edcrDetail[0].planDetail.blocks[0].building.floors.length"
+              }
+            },
+              {
                 "variable": "occupancy",
                 "value": {
                   "path": "$.edcrDetail[0].planDetail.planInformation.occupancy"
@@ -1255,6 +1299,12 @@
                 }
               },
               {
+                "variable": "receiptNo", 
+                "value": {
+                  "path": "$.paymentDetails[0].receiptNumber"
+                }
+              },
+              {
                 "variable": "CONDITION1",
                 "value": {
                   "path": "PDF_BP_CONDITION1"
@@ -1288,6 +1338,12 @@
                   "required": true,
                   "prefix": null,
                   "module": "rainmaker-obpsv2"
+                }
+              },
+              {
+                "variable": "tenantid", 
+                "value": {
+                  "path": "$.tenantId"
                 }
               },
               {
@@ -1452,7 +1508,15 @@
                 ]
               }
             ]
-          }
+          },
+          {
+            "qrcodeConfig": [
+                {
+                    "variable": "qrcodeimage",
+                    "value": "/upyog-ui/citizen/payment/verification?tenantId={{tenantid}}&applicationNumber={{applicationNo}}"
+                }
+            ]
+        }
         ]
       }
     ]

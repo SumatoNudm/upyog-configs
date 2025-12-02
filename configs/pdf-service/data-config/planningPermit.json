@@ -799,6 +799,50 @@
                 }
               },
               {
+                "variable": "pattaNo",
+                "value": {
+                  "path": "$.landInfo.newPattaNumber"
+                }
+              },
+              {
+                "variable": "var_floors",                        
+                "value":{
+                  "path": "$.edcrDetail[0].planDetail.blocks[0].building.floors.*"
+                },
+                 "type":"array",
+                 "format":{                            
+                    "type":"string",
+                    "scema":[
+                      {
+                        "variable": "floorName",
+                        "value": "$index"
+                      },
+                       {
+                          "variable":"floorArea",
+                          "value":"occupancies[0].builtUpArea"
+                       },
+                       {
+                        "variable":"noOfUnits",
+                        "value":"units.length"
+                     }
+                     
+
+                      ]
+                } 
+             },
+             {
+              "variable": "noOfBlocks",
+              "value": {
+                "path": "$.edcrDetail[0].planDetail.blocks.length"
+              }
+            },
+            {
+              "variable": "noOfFloors",
+              "value": {
+                "path": "$.edcrDetail[0].planDetail.blocks[0].building.floors.length"
+              }
+            },
+              {
                 "variable": "GEO_CORDINATES",
                 "value": {
                   "path": "PDF_GEO_CORDINATES"
@@ -1212,7 +1256,15 @@
                 ]
               }
             ]
-          }
+          },
+          {
+            "qrcodeConfig": [
+                {
+                    "variable": "qrcodeimage",
+                    "value": "/upyog-ui/citizen/payment/verification?tenantId={{tenantid}}&applicationNumber={{applicationNo}}"
+                }
+            ]
+        }
         ]
       }
     ]
