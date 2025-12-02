@@ -101,7 +101,7 @@
                 "font": "Roboto"
               },
               {
-                "text": "{{stakeholderType}} ID",
+                "text": "ID",
                 "border": [
                   false,
                   true,
@@ -144,7 +144,7 @@
                 "style": "receipt-table"
               },
               {
-                "text": "{{stakeholderType}} Name",
+                "text": "Name",
                 "border": [
                   false,
                   false,
@@ -166,7 +166,7 @@
             ],
             [
               {
-                "text": "{{stakeholderType}} Contact",
+                "text": "Contact",
                 "border": [
                   true,
                   false,

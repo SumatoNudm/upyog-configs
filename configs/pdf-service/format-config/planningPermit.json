@@ -49,44 +49,56 @@
             "style": "textStyles"
           },
           {
-            "stack": [
+            "columns": [
               {
-                "text": "{{the_chairman}}",
-                "style": "textStyles"
+                "stack": [
+                  {
+                    "text": "{{the_chairman}}",
+                    "style": "textStyles"
+                  },
+                  {
+                    "text": "{{MUNICIPAL_BOARD}}",
+                    "style": "textStyles"
+                  },
+                  {
+                    "text": " {{district}}, {{pincode}}",
+                    "style": "textStyles"
+                  },
+                  {
+                    "text": "{{THE_PRESIDENT}}",
+                    "style": "textStyles",
+                    "margin":[0, 10, 0, 0]
+                  },
+                  {
+                    "text": "{{GAON_PANCHAYAT}}",
+                    "style": "textStyles"
+                  },
+                  {
+                    "text": "{{revenueVillage}}, {{district}}, {{pincode}}",
+                    "style": "textStyles"
+                  },
+                  {
+                    "text": "{{state}}",
+                    "style": "textStyles"
+                  }
+                ],
+                "margin": [
+                  30,
+                  0,
+                  0,
+                  5
+                ]
               },
               {
-                "text": "{{MUNICIPAL_BOARD}}",
-                "style": "textStyles"
-              },
-              {
-                "text": " {{district}}, {{pincode}}",
-                "style": "textStyles"
-              },
-              {
-                "text": "{{THE_PRESIDENT}}",
-                "style": "textStyles",
-                "margin":[0, 10, 0, 0]
-              },
-              {
-                "text": "{{GAON_PANCHAYAT}}",
-                "style": "textStyles"
-              },
-              {
-                "text": "{{revenueVillage}}, {{district}}, {{pincode}}",
-                "style": "textStyles"
-              },
-              {
-                "text": "{{state}}",
-                "style": "textStyles"
+                
+                "image": "{{qrcodeimage}}",  
+                "alignment": "right",
+                "width":70,
+                "height":70
               }
-            ],
-            "margin": [
-              30,
-              0,
-              0,
-              5
             ]
           },
+          
           {
             "text": "{{sub}} : {{smallPlanningPermit}}",
             "style": "textStyles"
@@ -174,7 +186,7 @@
                     "text": "{{dagNo}}"
                   },
                   {
-                    "text": ""
+                    "text": "{{pattaNo}}"
                   },
                   {
                     "text": "{{revenueVillage}}"
@@ -476,143 +488,74 @@
               0
             ]
           },
-          {
-            "text": "{{PARTICULARS_OF_DEMOLITION}}",
-            "style": "textStyles",
-            "bold": true,
-            "decoration": "underline",
-            "margin": [
-              0,
-              15,
-              0,
-              0
-            ]
-          },
+          
           {
             "columns": [
               {
                 "width": "100%",
                 "table": {
-                  "widths": [
-                    "30%",
-                    "20%",
-                    "50%"
-                  ],
+                  "widths": ["30%", "40%", "30%"],
                   "body": [
                     [
                       {
-                        "text": "{{NO_OF_FLOORS}}",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ],
-                        "style": "textStyles"
+                        "text": "{{PARTICULARS_OF_DEMOLITION}}",
+                        "colSpan": 3,
+                        "bold": true,
+                        "border": [true, true, true, true],
+                        "margin":[0,0,0,0]
                       },
-                      {
-                        "text": "{{NOT_APPLICABLE}}",
-                        "colSpan": 2,
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ],
-                        "style": "textStyles"
-                      },
+                      {},
                       {}
                     ],
                     [
                       {
                         "text": "{{NO_OF_BLOCKS}}",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ],
-                        "style": "textStyles"
+                        "border": [true, true, true, true]
                       },
                       {
-                        "text": "{{NOT_APPLICABLE}}",
+                        "text": "{{noOfBlocks}}",
                         "colSpan": 2,
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ],
-                        "style": "textStyles"
+                        "border": [true, true, true, true]
                       },
                       {}
                     ],
                     [
                       {
+                        "text": "{{NO_OF_FLOORS}}",
+                        "border": [true, true, true, true]
+                      },
+                      {
+                        "text": "{{noOfFloors}}",
+                        "colSpan": 2,
+                        "border": [true, true, true, true]
+                      },
+                      {}
+                    ],
+          
+                    [
+                      {
                         "text": "{{AREA_OF_FLOORS}}",
-                        "rowSpan": 2,
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ],
-                        "style": "textStyles"
+                        "border": [true, true, true, true],
+                        "bold": true
                       },
                       {
-                        "text": "{{BASEMENT}}",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ],
-                        "style": "textStyles"
+                        "text": "Floor Name",
+                        "border": [true, true, true, true],
+                        "bold": true
                       },
                       {
-                        "text": "{{NOT_APPLICABLE}}",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ],
-                        "style": "textStyles"
+                        "text": "Area",
+                        "border": [true, true, true, true],
+                        "bold": true
                       }
                     ],
-                    [
-                      {},
-                      {
-                        "text": "GROUND",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ],
-                        "style": "textStyles"
-                      },
-                      {
-                        "text": "{{groundFloorArea}}",
-                        "border": [
-                          true,
-                          true,
-                          true,
-                          true
-                        ],
-                        "style": "textStyles"
-                      }
-                    ]
+          
+                    "{{#var_floors}}[{\"text\":\"\",\"border\":[true,true,true,true]},{\"text\":\"{{floorName}}\",\"border\":[true,true,true,true]},{\"text\":\"{{floorArea}}\",\"border\":[true,true,true,true]}]{{/var_floors}}"
                   ]
                 },
-                "style": "textStyles",
                 "alignment": "center",
-                "margin": [
-                  0,
-                  0,
-                  0,
-                  0
-                ]
+                "margin": [20, 10, 3, 3],
+                "style": "textStyles"
               }
             ]
           },
