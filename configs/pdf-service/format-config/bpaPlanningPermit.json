@@ -1,5 +1,5 @@
 {
-  "key": "planningPermit",
+  "key": "bpaPlanningPermit",
   "config": {
     "defaultStyle": {
       "font": "Cambay"
@@ -7,6 +7,13 @@
     "content": [
       {
         "stack": [
+          {
+            "image": "{{logo}}",
+            "width": 50,
+            "height": 61.25,
+            "alignment":"center"
+
+          },
           {
             "text": "{{GOVERNMENT_OF_ASSAM}}",
             "style": "header"

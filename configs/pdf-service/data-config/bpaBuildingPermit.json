@@ -12,6 +12,11 @@
           {
             "direct": [
               {
+                "variable": "logo",
+                "url":"https://niuatt-filestore.s3.ap-south-1.amazonaws.com/pg/logo/ashoka-chakra-png-46987.png",
+                "type":"image"
+              },
+              {
                 "variable": "GOVERNMENT_OF_ASSAM",
                 "value": {
                   "path": "PDF_BP_GOVERNMENT_OF_ASSAM"
@@ -1147,6 +1152,11 @@
                 }
               },
               {
+                "variable": "logo",
+                "url":"https://niuatt-filestore.s3.ap-south-1.amazonaws.com/pg/logo/ashoka-chakra-png-46987.png",
+                "type":"image"
+              },
+              {
                 "variable": "buildingHeight",
                 "value": {
                   "path": "$.edcrDetail[0].planDetail.blocks[0].building.buildingHeight"
@@ -1193,7 +1203,7 @@
                     "scema":[
                       {
                         "variable": "floorName",
-                        "value": "{index}"
+                        "value": "number"
                       },
                        {
                           "variable":"floorArea",
@@ -1513,7 +1523,7 @@
             "qrcodeConfig": [
                 {
                     "variable": "qrcodeimage",
-                    "value": "/upyog-ui/citizen/payment/verification?tenantId={{tenantid}}&applicationNumber={{applicationNo}}"
+                    "value": "/upyog-ui/citizen/obpsv2/application/{{applicationNo}}/{{tenantid}}"
                 }
             ]
         }

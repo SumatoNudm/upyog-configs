@@ -1,5 +1,5 @@
 {
-  "key": "planningPermit",
+  "key": "bpaPlanningPermit",
   "DataConfigs": {
     "serviceName": "rainmaker-obpsv2",
     "version": "1.0.0",
@@ -11,6 +11,11 @@
         "mappings": [
           {
             "direct": [
+              {
+                "variable": "logo",
+                "url":"https://niuatt-filestore.s3.ap-south-1.amazonaws.com/pg/logo/ashoka-chakra-png-46987.png",
+                "type":"image"
+              },
               {
                 "variable": "GOVERNMENT_OF_ASSAM",
                 "value": {
@@ -815,7 +820,7 @@
                     "scema":[
                       {
                         "variable": "floorName",
-                        "value": "$index"
+                        "value": "number"
                       },
                        {
                           "variable":"floorArea",
@@ -1261,7 +1266,7 @@
             "qrcodeConfig": [
                 {
                     "variable": "qrcodeimage",
-                    "value": "/upyog-ui/citizen/payment/verification?tenantId={{tenantid}}&applicationNumber={{applicationNo}}"
+                    "value": "/upyog-ui/citizen/obpsv2/application/{{applicationNo}}/{{tenantid}}"
                 }
             ]
         }
