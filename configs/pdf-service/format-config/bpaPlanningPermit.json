@@ -1,0 +1,802 @@
+{
+  "key": "bpaPlanningPermit",
+  "config": {
+    "defaultStyle": {
+      "font": "Cambay"
+    },
+    "content": [
+      {
+        "stack": [
+          {
+            "image": "{{logo}}",
+            "width": 50,
+            "height": 61.25,
+            "alignment":"center"
+
+          },
+          {
+            "text": "{{GOVERNMENT_OF_ASSAM}}",
+            "style": "header"
+          },
+          {
+            "text": "{{DEPARTMENT_OF_HOUSING_AND_AFFAIRS}}",
+            "style": "header"
+          },
+          {
+            "text": "{{DEVELOPMENT_AUTHORITY}}",
+            "style": "header"
+          },
+          {
+            "text": "{{district}}, {{pincode}}, {{state}}",
+            "style": "header"
+          },
+          {
+            "text": "{{FORM}}",
+            "style": "header"
+          },
+          {
+            "text": "{{PLANNING_PERMIT}}",
+            "style": "header"
+          },
+          {
+            "columns": [
+              {
+                "text": "{{PP_NO}} : {{applicationNo}}",
+                "style": "textStyles"
+              },
+              {
+                "text": "{{Dated}}: {{date}}",
+                "alignment": "right",
+                "style": "textStyles"
+              }
+            ]
+          },
+          {
+            "text": "{{to}}",
+            "style": "textStyles"
+          },
+          {
+            "columns": [
+              {
+                "stack": [
+                  {
+                    "text": "{{the_chairman}}",
+                    "style": "textStyles"
+                  },
+                  {
+                    "text": "{{MUNICIPAL_BOARD}}",
+                    "style": "textStyles"
+                  },
+                  {
+                    "text": " {{district}}, {{pincode}}",
+                    "style": "textStyles"
+                  },
+                  {
+                    "text": "{{THE_PRESIDENT}}",
+                    "style": "textStyles",
+                    "margin":[0, 10, 0, 0]
+                  },
+                  {
+                    "text": "{{GAON_PANCHAYAT}}",
+                    "style": "textStyles"
+                  },
+                  {
+                    "text": "{{revenueVillage}}, {{district}}, {{pincode}}",
+                    "style": "textStyles"
+                  },
+                  {
+                    "text": "{{state}}",
+                    "style": "textStyles"
+                  }
+                ],
+                "margin": [
+                  30,
+                  0,
+                  0,
+                  5
+                ]
+              },
+              {
+                
+                "image": "{{qrcodeimage}}",  
+                "alignment": "right",
+                "width":70,
+                "height":70
+              }
+            ]
+          },
+          
+          {
+            "text": "{{sub}} : {{smallPlanningPermit}}",
+            "style": "textStyles"
+          },
+          {
+            "text": "{{ref}} : {{applicationNo}} {{dated}} {{date}} {{submittedBy}} {{applicantName}} {{throughRTP}} {{architect}}",
+            "style": "textStyles",
+            "margin": [
+                0,
+                0,
+                0,
+                10
+            ]
+          },
+          {
+            "text": "{{sir/madam}}, ",
+            "style": "textStyles"
+          },
+          {
+            "text": "{{WITH_REFERENCE_TO_THE_aBOVE_APPLICATION}}, {{revenueVillage}}, {{district}}, {{pincode}}, {{state}} {{of}} {{mouzaValue}} {{mouza}}. {{PLANNING_PERMIT_IS_HEREBY}} {{zone}} {{AS_PER_MASTER_PLAN}}. {{THE_PARTICULARS_OF_CONSTRUCTION_LISTED_BELOW}}",
+            "style": "textStyles",
+            "margin" : [
+                0, 
+                10, 
+                0, 
+                0
+            ]
+          },
+          {
+            "text": "{{PARTICULARS}}",
+            "style": "textStyles",
+            "bold": true,
+            "margin": [
+              0,
+              10,
+              0,
+              0
+            ]
+          },
+          {
+            "table": {
+              "headerRows": 1,
+              "widths": [
+                "12%",
+                "12%",
+                "16%",
+                "14%",
+                "10%",
+                "18%",
+                "18%"
+              ],
+              "body": [
+                [
+                  {
+                    "text": "{{DAG_NO}}",
+                    "bold": true
+                  },
+                  {
+                    "text": "{{PATTA_NO}}",
+                    "bold": true
+                  },
+                  {
+                    "text": "{{REVENUE_VILLAGE}}",
+                    "bold": true
+                  },
+                  {
+                    "text": "{{MOUZA}}",
+                    "bold": true
+                  },
+                  {
+                    "text": "{{WARD_NO}}",
+                    "bold": true
+                  },
+                  {
+                    "text": "{{ROAD_WIDTH}}",
+                    "bold": true
+                  },
+                  {
+                    "text": "{{PLOT_AREA}}",
+                    "bold": true
+                  }
+                ],
+                [
+                  {
+                    "text": "{{dagNo}}"
+                  },
+                  {
+                    "text": "{{pattaNo}}"
+                  },
+                  {
+                    "text": "{{revenueVillage}}"
+                  },
+                  {
+                    "text": "{{mouza}}"
+                  },
+                  {
+                    "text": "{{wardNo}}"
+                  },
+                  {
+                    "text": "{{roadWidth}}"
+                  },
+                  {
+                    "text": "{{plotArea}}"
+                  }
+                ]
+              ]
+            },
+            "style": "textStyles",
+            "margin": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "table": {
+              "headerRows": 1,
+              "widths": [
+                "6%",
+                "26%",
+                "14%",
+                "14%",
+                "40%"
+              ],
+              "body": [
+                [
+                  {
+                    "text": "{{SLNO}}",
+                    "bold": true
+                  },
+                  {
+                    "text": "{{PARAMETER}}",
+                    "bold": true
+                  },
+                  {
+                    "text": "{{PERMISSIBLE}}",
+                    "bold": true
+                  },
+                  {
+                    "text": "{{PROPOSED}}",
+                    "bold": true
+                  },
+                  {
+                    "text": "{{APPROVED_REMARKS}}",
+                    "bold": true
+                  }
+                ],
+                [
+                  {
+                    "text": "1"
+                  },
+                  {
+                    "text": "{{BUILDING_HEIGHT}}"
+                  },
+                  {
+                    "text": "{{buildingHeight}}"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "{{APPROVED}}"
+                  }
+                ],
+                [
+                  {
+                    "text": "2"
+                  },
+                  {
+                    "text": "{{NO_OF_FLOORS_BLOCKS}}"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "{{APPROVED}}"
+                  }
+                ],
+                [
+                  {
+                    "text": "3"
+                  },
+                  {
+                    "text": "{{USE}}"
+                  },
+                  {
+                    "text": "{{occupancy}}"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": ""
+                  }
+                ],
+                [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "{{FAR}}"
+                  },
+                  {
+                    "text": "{{far}}"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "{{APPROVED}}"
+                  }
+                ],
+                [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "{{COVERAGE}}"
+                  },
+                  {
+                    "text": "{{coverage}}"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "4"
+                  },
+                  {
+                    "text": "{{TYPE_OF_CONSTRUCTION}}"
+                  },
+                  {
+                    "text": "{{constructionType}}"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "{{APPROVED}}"
+                  }
+                ],
+                [
+                  {
+                    "text": "5"
+                  },
+                  {
+                    "text": "{{FRONT_SET_BACK}}"
+                  },
+                  {
+                    "text": "{{frontSetBack}}"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "{{APPROVED}}"
+                  }
+                ],
+                [
+                  {
+                    "text": "6"
+                  },
+                  {
+                    "text": "{{REAR_SET_BACK}}"
+                  },
+                  {
+                    "text": "{{rearSetBack}}"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "{{APPROVED}}"
+                  }
+                ],
+                [
+                  {
+                    "text": "7"
+                  },
+                  {
+                    "text": "{{RIGHT_SIDE_SET_BACK}}"
+                  },
+                  {
+                    "text": "{{rightSetBack}}"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "{{APPROVED}}"
+                  }
+                ],
+                [
+                  {
+                    "text": "8"
+                  },
+                  {
+                    "text": "{{LEFT_SIDE_SET_BACK}}"
+                  },
+                  {
+                    "text": "{{leftSetBack}}"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "{{APPROVED}}"
+                  }
+                ],
+                [
+                  {
+                    "text": "9"
+                  },
+                  {
+                    "text": "{{GEO_CORDINATES}}"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "10"
+                  },
+                  {
+                    "text": "{{LATITUDE}}"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": ""
+                  }
+                ],
+                [
+                  {
+                    "text": "11"
+                  },
+                  {
+                    "text": "{{LONGITITUDE}}"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              ]
+            },
+            "style": "textStyles",
+            "margin": [
+              0,
+              20,
+              0,
+              0
+            ]
+          },
+          {
+            "text": "{{built_to_line}}",
+            "style": "textStyles",
+            "margin": [
+              0,
+              10,
+              0,
+              0
+            ]
+          },
+          
+          {
+            "columns": [
+              {
+                "width": "100%",
+                "table": {
+                  "widths": ["30%", "40%", "30%"],
+                  "body": [
+                    [
+                      {
+                        "text": "{{PARTICULARS_OF_DEMOLITION}}",
+                        "colSpan": 3,
+                        "bold": true,
+                        "border": [true, true, true, true],
+                        "margin":[0,0,0,0]
+                      },
+                      {},
+                      {}
+                    ],
+                    [
+                      {
+                        "text": "{{NO_OF_BLOCKS}}",
+                        "border": [true, true, true, true]
+                      },
+                      {
+                        "text": "{{noOfBlocks}}",
+                        "colSpan": 2,
+                        "border": [true, true, true, true]
+                      },
+                      {}
+                    ],
+                    [
+                      {
+                        "text": "{{NO_OF_FLOORS}}",
+                        "border": [true, true, true, true]
+                      },
+                      {
+                        "text": "{{noOfFloors}}",
+                        "colSpan": 2,
+                        "border": [true, true, true, true]
+                      },
+                      {}
+                    ],
+          
+                    [
+                      {
+                        "text": "{{AREA_OF_FLOORS}}",
+                        "border": [true, true, true, true],
+                        "bold": true
+                      },
+                      {
+                        "text": "Floor Name",
+                        "border": [true, true, true, true],
+                        "bold": true
+                      },
+                      {
+                        "text": "Area",
+                        "border": [true, true, true, true],
+                        "bold": true
+                      }
+                    ],
+          
+                    "{{#var_floors}}[{\"text\":\"\",\"border\":[true,true,true,true]},{\"text\":\"{{floorName}}\",\"border\":[true,true,true,true]},{\"text\":\"{{floorArea}}\",\"border\":[true,true,true,true]}]{{/var_floors}}"
+                  ]
+                },
+                "alignment": "center",
+                "margin": [20, 10, 3, 3],
+                "style": "textStyles"
+              }
+            ]
+          },
+          {
+            "text": "{{NOTE}}",
+            "fontSize": 7
+          },
+          {
+            "text": "{{CONDITION}}",
+            "style": "header",
+            "decoration": "underline"
+          },
+          {
+            "ol": [
+              {
+                "text": "{{CONDITION1}}"
+              },
+              {
+                "text": "{{CONDITION2}}"
+              },
+              {
+                "text": "{{CONDITION3}}"
+              },
+              {
+                "text": "{{CONDITION4}}"
+              },
+              {
+                "text": "{{CONDITION5}}"
+              },
+              {
+                "text": "{{CONDITION6}}"
+              },
+              {
+                "text": "{{CONDITION7}}"
+              }
+            ],
+            "style": "textStyles",
+            "alignment": "left"
+          },
+          {
+            "table": {
+              "widths": [
+                "100%"
+              ],
+              "body": [
+                [
+                  {
+                    "stack": [
+                      {
+                        "text": "{{remark}}",
+                        "style": "textStyles"
+                      },
+                      {
+                        "text": "{{remark_note}}",
+                        "style": "textStyles"
+                      }
+                    ],
+                    "border": [
+                      true,
+                      true,
+                      true,
+                      true
+                    ]
+                  }
+                ]
+              ]
+            },
+            "alignment": "left",
+            "margin": [
+              0,
+              10,
+              0,
+              0
+            ]
+          },
+          {
+            "table": {
+              "headerRows": 1,
+              "widths": [
+                "50%",
+                "50%"
+              ],
+              "body": [
+                [
+                  {
+                    "text": "{{LENGTH_OF_BWALL}}",
+                    "bold": true
+                  },
+                  {
+                    "text": " ",
+                    "bold": true
+                  }
+                ],
+                [
+                  {
+                    "text": "{{HEIGHT_OF_BWALL}} "
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              ]
+            },
+            "style": "textStyles",
+            "margin": [
+              0,
+              20,
+              0,
+              0
+            ]
+          },
+          {
+            "stack": [
+              {
+                "text": "APPROVED_BY",
+                "margin": [
+                  0,
+                  10,
+                  0,
+                  0
+                ]
+              },
+              {
+                "text": "{{CHAIRMAN}}"
+              },
+              {
+                "text": "{{DEVELOPMENT_AUTHORITY}}"
+              },
+              {
+                "text": "{{district}}, {{pincode}}, {{state}}"
+              }
+            ],
+            "alignment": "right",
+            "style": "textStyles"
+          },
+          {
+            "columns": [
+              {
+                "text": [
+                  {
+                    "text": "{{MEMO_NO}} : ",
+                    "style": "textStyles"
+                  },
+                  {
+                    "text": "{{applicationNo}}",
+                    "bold": true
+                  }
+                ]
+              },
+              {
+                "text": [
+                  {
+                    "text": "{{Dated}} : ",
+                    "style": "textStyles"
+                  },
+                  {
+                    "text": "{{date}}",
+                    "bold": true
+                  }
+                ],
+                "alignment": "right"
+              }
+            ],
+            "margin": [
+              0,
+              30,
+              0,
+              10
+            ]
+          },
+          {
+            "text": "{{COPY_TO}}",
+            "style": "textStyles",
+            "margin": [
+              0,
+              0,
+              0,
+              5
+            ]
+          },
+          {
+            "ol": [
+              "{{APPLICANT}} {{applicantName}} {{district}}, {{pincode}}, {{mobileNumber}}",
+              {
+                "text": "{{RTP}} {{NAME_OF_RTP}}, {{mobileNumber}}"
+              }
+            ],
+            "style": "textStyles"
+          },
+          {
+            "stack": [
+              {
+                "text": "{{Sd}}",
+                "bold": true,
+                "alignment": "right"
+              },
+              {
+                "text": "{{CHAIRMAN}}"
+              },
+              {
+                "text": "{{MUNICIPAL_BOARD}}"
+              },
+              {
+                "text": "{{district}}, {{pincode}}, {{state}}"
+              }
+            ],
+            "alignment": "right",
+            "style": "textStyles"
+          },
+          {
+            "text": "THIS_IS_COMPUTER_GENERATED_DOCUMENT",
+            "fontSize": 7,
+            "decoration": "underline",
+            "italics": true,
+            "alignment": "center",
+            "margin": [
+              0,
+              10,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    ],
+    "styles": {
+      "header": {
+        "bold": true,
+        "alignment": "center",
+        "fontSize": 10
+      },
+      "textStyles": {
+        "fontSize": 8
+      }
+    }
+  }
+}
