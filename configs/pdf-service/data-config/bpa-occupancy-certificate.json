@@ -1,7 +1,7 @@
 {
-  "key": "occupancy-certificate",
+  "key": "bpa-occupancy-certificate",
   "DataConfigs": {
-    "serviceName": "rainmaker-bpa",
+    "serviceName": "rainmaker-obpsv2",
     "version": "1.0.0",
     "baseKeyPath": "$.Bpa.*",
     "entityIdPath": "$.applicationNo",
@@ -88,7 +88,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -100,7 +100,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -112,7 +112,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -124,7 +124,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -136,7 +136,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -148,7 +148,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -160,7 +160,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -172,7 +172,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -184,7 +184,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -196,7 +196,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -208,7 +208,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -220,7 +220,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -232,7 +232,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -244,7 +244,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -256,7 +256,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -268,7 +268,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -280,7 +280,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -292,7 +292,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -304,7 +304,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -316,7 +316,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -328,7 +328,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -340,7 +340,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -352,7 +352,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -364,7 +364,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -376,7 +376,7 @@
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-bpa"
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -410,7 +410,7 @@
               },
               {
                 "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=pg&filter=%5B?(@.code=='{$.tenantId}')%5D",
+                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=as&filter=%5B?(@.code=='{$.tenantId}')%5D",
                 "apiRequest": null,
                 "responseMapping": [
                   {
