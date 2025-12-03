@@ -17,9 +17,10 @@ serviceMaps:
              planning_permit_no, planning_permit_date, pp_filestore_id,
              building_permit_no, building_permit_date, bp_filestore_id,
              occupancy_certificate_no, occupancy_certificate_date, oc_filestore_id,
+             pp_fee_receipt_filestore_id, bp_fee_receipt_filestore_id,
              property_no, property_details, property_vendor)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?::JSONB,
-             ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?::JSONB, ?);
+             ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?::JSONB, ?);
           basePath: BPA
           jsonMaps:
             - jsonPath: $.BPA.id
@@ -51,6 +52,8 @@ serviceMaps:
             - jsonPath: $.BPA.occupancyCertificateNo
             - jsonPath: $.BPA.occupancyCertificateDate
             - jsonPath: $.BPA.ocFileStoreId
+            - jsonPath: $.BPA.ppFeeReceiptFileStoreId
+            - jsonPath: $.BPA.bpFeeReceiptFileStoreId
             - jsonPath: $.BPA.propertyNo
             - jsonPath: $.BPA.propertyDetails
               type: JSON
@@ -190,7 +193,9 @@ serviceMaps:
               bp_filestore_id = ?, 
               occupancy_certificate_no = ?, 
               occupancy_certificate_date = ?, 
-              oc_filestore_id = ?
+              oc_filestore_id = ?,
+              pp_fee_receipt_filestore_id = ?, 
+              bp_fee_receipt_filestore_id = ?
             WHERE id = ?;
           basePath: BPA
           jsonMaps:
@@ -213,6 +218,8 @@ serviceMaps:
             - jsonPath: $.BPA.occupancyCertificateNo
             - jsonPath: $.BPA.occupancyCertificateDate
             - jsonPath: $.BPA.ocFileStoreId
+            - jsonPath: $.BPA.ppFeeReceiptFileStoreId
+            - jsonPath: $.BPA.bpFeeReceiptFileStoreId
             - jsonPath: $.BPA.id
 
     - version: 1.0
@@ -277,6 +284,8 @@ serviceMaps:
               occupancy_certificate_no = ?, 
               occupancy_certificate_date = ?, 
               oc_filestore_id = ?, 
+              pp_fee_receipt_filestore_id = ?, 
+              bp_fee_receipt_filestore_id = ?,
               property_no = ?, 
               property_details = ?::JSONB, 
               property_vendor = ?
@@ -309,6 +318,8 @@ serviceMaps:
             - jsonPath: $.BPA.occupancyCertificateNo
             - jsonPath: $.BPA.occupancyCertificateDate
             - jsonPath: $.BPA.ocFileStoreId
+            - jsonPath: $.BPA.ppFeeReceiptFileStoreId
+            - jsonPath: $.BPA.bpFeeReceiptFileStoreId
             - jsonPath: $.BPA.propertyNo
             - jsonPath: $.BPA.propertyDetails
               type: JSON
