@@ -763,7 +763,7 @@
                 "text": "{{CHAIRMAN}}"
               },
               {
-                "text": "{{MUNICIPAL_BOARD}}"
+                "text": "{{DEVELOPMENT_AUTHORITY}}"
               },
               {
                 "text": "{{district}}, {{pincode}}, {{state}}"
@@ -773,7 +773,7 @@
             "style": "textStyles"
           },
           {
-            "text": "THIS_IS_COMPUTER_GENERATED_DOCUMENT",
+            "text": "{{THIS_IS_COMPUTER_GENERATED_DOCUMENT}}",
             "fontSize": 7,
             "decoration": "underline",
             "italics": true,
