@@ -677,7 +677,7 @@
           {
             "stack": [
               {
-                "text": "APPROVED_BY",
+                "text": "{{APPROVED_BY}}",
                 "margin": [
                   0,
                   10,
