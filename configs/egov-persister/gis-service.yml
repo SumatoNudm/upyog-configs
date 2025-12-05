@@ -13,7 +13,7 @@ serviceMaps:
             - jsonPath: $.rtpiId
             - jsonPath: $.fileStoreId
             - jsonPath: $.latitude
-            - jsonPath: $.longitude,
+            - jsonPath: $.longitude
             - jsonPath: $.planningAreaCode
             - jsonPath: $.tenantId
             - jsonPath: $.status
