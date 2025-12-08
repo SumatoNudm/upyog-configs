@@ -292,6 +292,29 @@
                }
               },
               {
+                "variable": "var_fee",                        
+                "value":{
+                  "path": "$.paymentDetails[0].additionalDetails.feebreakup.*"
+                },
+                 "type":"array",
+                 "format":{                            
+                    "type":"string",
+                    "scema":[
+                      {
+                        "variable": "amount",
+                        "value": "estimateAmount"
+                      },
+                       {
+                          "variable":"floor",
+                          "value":"additionalDetails.floor"
+                       }
+                       
+                     
+
+                      ]
+                } 
+             },
+              {
                 "variable": "excess_amount_paid",
                 "value": {
                   "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_EXCESS_AMOUNT_PAID"
