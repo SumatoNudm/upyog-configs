@@ -199,7 +199,7 @@
                     "text": "{{revenueVillage}}"
                   },
                   {
-                    "text": "{{mouza}}"
+                    "text": "{{mouzaValue}}"
                   },
                   {
                     "text": "{{wardNo}}"
@@ -449,7 +449,7 @@
                     "text": "{{LATITUDE}}"
                   },
                   {
-                    "text": ""
+                    "text": "{{latitude}}"
                   },
                   {
                     "text": ""
@@ -466,7 +466,7 @@
                     "text": "{{LONGITITUDE}}"
                   },
                   {
-                    "text": ""
+                    "text": "{{longitude}}"
                   },
                   {
                     "text": ""

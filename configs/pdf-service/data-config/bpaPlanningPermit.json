@@ -41,6 +41,18 @@
                 }
               },
               {
+                "variable": "longitude",
+                "value": {
+                  "path": "$.gisResponse.Gis[0].longitude"
+                }
+              },
+              {
+                "variable": "latitude",
+                "value": {
+                  "path": "$.gisResponse.Gis[0].latitude"
+                }
+              },
+              {
                 "variable": "DEVELOPMENT_AUTHORITY",
                 "value": {
                   "path": "PDF_DEVELOPMENT_AUTHORITY"

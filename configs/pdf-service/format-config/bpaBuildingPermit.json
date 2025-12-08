@@ -784,7 +784,7 @@
                         ]
                       },
                       {
-                        "text": "",
+                        "text": "{{latitude}}",
                         "colSpan": 2,
                         "border": [
                           true,
@@ -806,7 +806,7 @@
                         ]
                       },
                       {
-                        "text": "",
+                        "text": "{{longitude}}",
                         "colSpan": 2,
                         "border": [
                           true,

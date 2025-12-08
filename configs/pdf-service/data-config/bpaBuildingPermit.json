@@ -1181,6 +1181,18 @@
                 }
               },
               {
+                "variable": "longitude",
+                "value": {
+                  "path": "$.gisResponse.Gis[0].longitude"
+                }
+              },
+              {
+                "variable": "latitude",
+                "value": {
+                  "path": "$.gisResponse.Gis[0].latitude"
+                }
+              },
+              {
                 "variable": "dagNo",
                 "value": {
                   "path": "$.edcrDetail[0].planDetail.planInfoProperties['DAG NO']"

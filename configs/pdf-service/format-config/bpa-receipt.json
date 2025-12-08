@@ -434,6 +434,49 @@
           ]
         },
         "layout": {}
+        
+      },
+      {
+        "text":"Fee Breakup", 
+        "margin":[-25, 20, 0, 0],
+        "decoration": "underline",
+        "bold":true
+      },
+      
+      {
+       
+        "table": {
+          "widths": [
+            "50%",
+            "50%"
+          ],
+          "body": [
+            
+            [
+              {
+                "text": "Floor",
+                
+                "bold":true
+                
+              },
+              {
+                "text": "Amount",
+                
+                "bold":true
+                
+              }
+            ],
+            "{{#var_fee}}[{\"text\":\"{{floor}}\",\"style\":\"var-styles\"},{\"text\":\"{{amount}}\",\"style\":\"var-styles\"}]{{/var_fee}}"
+          ]
+        },
+        "layout": {},
+        "margin":[
+          -25,
+          5,
+          -22,
+          15
+        ]
+        
       },
       {
         "style": "next-noc-table",
@@ -482,7 +525,8 @@
                 ]
             ]
         },
-        "layout": {}
+        "layout": {},
+        "margin":[0,10,0,0]
     },
       {
         "style": "receipt-approver",
@@ -632,6 +676,17 @@
       "fontWeight": 400,
       "margin": [
         -30,
+        2,
+        0,
+        2
+      ]
+    },
+    "var-styles":{
+      "bold": false,
+      "fontSize": 12,
+      "fontWeight": 400,
+      "margin": [
+        0,
         2,
         0,
         2
