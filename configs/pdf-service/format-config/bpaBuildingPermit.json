@@ -983,13 +983,16 @@
           {
             "stack": [
               {
-                "text": "APPROVED_BY",
+                "text": "{{APPROVED_BY}}",
                 "margin": [
                   0,
                   10,
                   0,
                   0
                 ]
+              },
+              {
+                "text": "{{CHAIRMAN}}"
               },
               {
                 "text": "{{MUNICIPAL_BOARD}}"
@@ -1199,7 +1202,7 @@
             "alignment": "left"
           },
           {
-            "text": "THIS_IS_COMPUTER_GENERATED_DOCUMENT",
+            "text": "{{THIS_IS_COMPUTER_GENERATED_DOCUMENT}}",
             "fontSize": 7,
             "decoration": "underline",
             "italics": true,
