@@ -67,7 +67,7 @@ ReportDefinitions:
       type: singlevaluelist
       pattern: 'http://egov-mdms-service:8080/egov-mdms-service/v1/_get?tenantId=$tenantid&moduleName=tenant&masterName=tenants|$.MdmsRes.tenant.tenants.*.code|$.MdmsRes.tenant.tenants.*.city.name'
       source: obps
-      isMandatory: true
+      isMandatory: false
       searchClause: AND bp.tenant_id = $tenantid
     - name: fromdate
       label: reports.obps.fromdate
@@ -147,7 +147,7 @@ ReportDefinitions:
       type: singlevaluelist
       pattern: 'http://egov-mdms-service:8080/egov-mdms-service/v1/_get?tenantId=$tenantid&moduleName=tenant&masterName=tenants|$.MdmsRes.tenant.tenants.*.code|$.MdmsRes.tenant.tenants.*.city.name'
       source: obps
-      isMandatory: true
+      isMandatory: false
       searchClause: AND tenant_id = $tenantid
     - name: status_name
       label: reports.obps.tenantid
