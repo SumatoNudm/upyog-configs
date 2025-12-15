@@ -1,0 +1,217 @@
+ReportDefinitions:
+- reportName: obpsApplicationReport
+  decryptionPathId: StateTradeLicenseCancelledRegistryReport    
+  summary: Building Plan Approval Application Report
+  version: 1.0.0
+  moduleName: rainmaker-obps
+  sourceColumns:
+    - name: application_no
+      label: reports.obps.applicationno
+      type: string
+      source: obps
+      showColumn: true
+    - name: normalappdate
+      label: reports.obps.normalappdate
+      type: epoch
+      source: obps
+      showColumn: true
+    - name: applicationdate
+      label: reports.obps.applicationdate
+      type: string
+      source: obps
+      showColumn: true
+    - name: edcr_number
+      label: reports.obps.edcrnumber
+      type: string
+      source: obps
+      showColumn: true
+    - name: applicationchannel
+      label: reports.obps.applicationchannel
+      type: string
+      source: obps
+      showColumn: true
+    - name: name
+      label: rainmaker.obps.name
+      type: string
+      source: obps
+      showColumn: true
+    - name: applicationtype
+      label: reports.obps.applicationtype
+      type: string
+      source: obps
+      showColumn: true
+    - name: occupancy_type
+      label: reports.obps.occupancytype
+      type: string
+      source: obps
+      showColumn: false
+    - name: status
+      label: reports.obps.status
+      type: string
+      source: obps
+      showColumn: true
+    - name: currentowner
+      label: reports.obps.currentowner
+      type: string
+      source: obps
+      showColumn: false
+    - name: planning_permit_no
+      label: reports.obps.planningpermitno
+      type: string
+      source: obps
+      showColumn: true
+
+  searchParams:
+    - name: tenantid
+      label: reports.obps.tenantid
+      type: singlevaluelist
+      pattern: 'http://egov-mdms-service:8080/egov-mdms-service/v1/_get?tenantId=$tenantid&moduleName=tenant&masterName=tenants|$.MdmsRes.tenant.tenants.*.code|$.MdmsRes.tenant.tenants.*.city.name'
+      source: obps
+      isMandatory: false
+      searchClause: AND bp.tenant_id = $tenantid
+    - name: fromdate
+      label: reports.obps.fromdate
+      type: epoch
+      source: obps
+      isMandatory: false
+      searchClause: AND bp.application_date >= $fromdate
+    - name: todate
+      label: reports.obps.todate
+      type: epoch
+      source: obps
+      isMandatory: false
+      searchClause: AND bp.application_date <= $todate
+    - name: applicationno
+      label: reports.obps.applicationno
+      type: string
+      source: obps
+      isMandatory: false
+      searchClause: AND bp.application_no = $applicationno
+    - name: status
+      label: reports.obps.status
+      type: string
+      source: obps
+      isMandatory: false
+      searchClause: AND bp.status = $status
+
+  query: |
+    SELECT 
+      bp.application_no, 
+      bp.application_date as normalappdate, 
+      to_char(To_timestamp(bp.application_date / 1000), 'DD/MM/YYYY') as applicationdate,
+      bp.edcr_number, 
+      landinfo.channel as applicationchannel, 
+      usr.name as name,
+      bp.application_type as applicationtype, 
+      land.occupancy_type, 
+      bp.status, 
+      case when st.isterminatestate=true then null else userassignee.name end as currentowner, 
+      bp.planning_permit_no 
+    FROM ug_bpa_buildingplans bp 
+    INNER JOIN eg_wf_processinstance_v2 pi ON pi.businessid=bp.application_no 
+    INNER JOIN (
+      SELECT businessid, max(createdtime) as maxtime 
+      FROM eg_wf_processinstance_v2 
+      GROUP BY businessid
+    ) wfg ON pi.businessid=wfg.businessid AND maxtime=pi.createdtime 
+    INNER JOIN eg_wf_state_v2 st ON pi.status=st.uuid 
+    INNER JOIN eg_user usr ON bp.created_by = usr.uuid  
+    INNER JOIN ug_land_unit land ON land.land_info_id = bp.land_id 
+    INNER JOIN ug_land_info landinfo ON land.land_info_id = landinfo.id 
+    INNER JOIN ug_land_address adr ON adr.land_info_id = landinfo.id 
+    INNER JOIN eg_user userassignee ON assigner = userassignee.uuid
+    WHERE 1=1
+
+  orderby: ORDER BY bp.application_date DESC
+
+- reportName: obpsRegistryReport
+  decryptionPathId: StateTradeLicenseCancelledRegistryReport    
+  summary: OBPS Registry Report - Status Count
+  version: 1.0.0
+  moduleName: rainmaker-obps
+  sourceColumns:
+    - name: status_name
+      label: reports.obps.status
+      type: string
+      source: obps
+      showColumn: true
+    - name: count
+      label: reports.obps.count
+      type: number
+      source: obps
+      showColumn: true
+
+  searchParams:
+    - name: tenantid
+      label: reports.obps.status
+      type: singlevaluelist
+      pattern: 'http://egov-mdms-service:8080/egov-mdms-service/v1/_get?tenantId=$tenantid&moduleName=tenant&masterName=tenants|$.MdmsRes.tenant.tenants.*.code|$.MdmsRes.tenant.tenants.*.city.name'
+      source: obps
+      isMandatory: false
+      searchClause: AND tenant_id = $tenantid
+    - name: status_name
+      label: reports.obps.tenantid
+      type: singlevaluelist
+      pattern: 'list://FORWARDED_TO_TECHNICAL_ENGINEER_GP:Forwarded to Technical Engineer (GP),CITIZEN_APPROVAL:Citizen Approval Pending/Completed,PENDING_RTP_APPROVAL:RTP Approval Pending,PENDING_CHAIRMAN_DA:Pending at Chairman (DA),PENDING_DA_ENGINEER:Pending at DA Engineer,PENDING_CHAIRMAN_PRESIDENT_MB:Pending at Chairman/President (MB),PENDING_FOR_SCRUTINY:Pending for Scrutiny,PAYMENT_PENDING:Payment Pending,PENDING_DD_AD_DEVELOPMENT_AUTHORITY:Pending at DD/AD Development Authority,GIS_VALIDATION:GIS Validation in Progress,CITIZEN_FINAL_PAYMENT:Citizen Final Payment Pending,APPLICATION_COMPLETED:Application Completed,FORWARDED_TO_TECHNICAL_ENGINEER_MB:Forwarded to Technical Engineer (MB),FORWARDED_TO_DD_AD_TCP:Forwarded to DD/AD (TCP)'
+      source: obps
+      isMandatory: false
+      wrapper: true
+      searchClause: AND status_name = $status
+
+  query: |
+    SELECT 'FORWARDED_TO_TECHNICAL_ENGINEER_GP' as status_name, COUNT(*) as count
+    FROM ug_bpa_buildingplans WHERE status = 'FORWARDED_TO_TECHNICAL_ENGINEER_GP'
+    
+    UNION ALL
+    SELECT 'CITIZEN_APPROVAL' as status_name, COUNT(*) as count
+    FROM ug_bpa_buildingplans WHERE status = 'CITIZEN_APPROVAL'
+    
+    UNION ALL
+    SELECT 'PENDING_RTP_APPROVAL' as status_name, COUNT(*) as count
+    FROM ug_bpa_buildingplans WHERE status = 'PENDING_RTP_APPROVAL'
+    
+    UNION ALL
+    SELECT 'PENDING_CHAIRMAN_DA' as status_name, COUNT(*) as count
+    FROM ug_bpa_buildingplans WHERE status = 'PENDING_CHAIRMAN_DA'
+    
+    UNION ALL
+    SELECT 'PENDING_DA_ENGINEER' as status_name, COUNT(*) as count
+    FROM ug_bpa_buildingplans WHERE status = 'PENDING_DA_ENGINEER'
+    
+    UNION ALL
+    SELECT 'PENDING_CHAIRMAN_PRESIDENT_MB' as status_name, COUNT(*) as count
+    FROM ug_bpa_buildingplans WHERE status = 'PENDING_CHAIRMAN_PRESIDENT_MB'
+    
+    UNION ALL
+    SELECT 'PENDING_FOR_SCRUTINY' as status_name, COUNT(*) as count
+    FROM ug_bpa_buildingplans WHERE status = 'PENDING_FOR_SCRUTINY'
+    
+    UNION ALL
+    SELECT 'PAYMENT_PENDING' as status_name, COUNT(*) as count
+    FROM ug_bpa_buildingplans WHERE status = 'PAYMENT_PENDING'
+    
+    UNION ALL
+    SELECT 'PENDING_DD_AD_DEVELOPMENT_AUTHORITY' as status_name, COUNT(*) as count
+    FROM ug_bpa_buildingplans WHERE status = 'PENDING_DD_AD_DEVELOPMENT_AUTHORITY'
+    
+    UNION ALL
+    SELECT 'GIS_VALIDATION' as status_name, COUNT(*) as count
+    FROM ug_bpa_buildingplans WHERE status = 'GIS_VALIDATION'
+    
+    UNION ALL
+    SELECT 'CITIZEN_FINAL_PAYMENT' as status_name, COUNT(*) as count
+    FROM ug_bpa_buildingplans WHERE status = 'CITIZEN_FINAL_PAYMENT'
+    
+    UNION ALL
+    SELECT 'APPLICATION_COMPLETED' as status_name, COUNT(*) as count
+    FROM ug_bpa_buildingplans WHERE status = 'APPLICATION_COMPLETED'
+    
+    UNION ALL
+    SELECT 'FORWARDED_TO_TECHNICAL_ENGINEER_MB' as status_name, COUNT(*) as count
+    FROM ug_bpa_buildingplans WHERE status = 'FORWARDED_TO_TECHNICAL_ENGINEER_MB'
+    
+    UNION ALL
+    SELECT 'FORWARDED_TO_DD_AD_TCP' as status_name, COUNT(*) as count
+    FROM ug_bpa_buildingplans WHERE status = 'FORWARDED_TO_DD_AD_TCP'
+
+  orderby: ORDER BY status_name
