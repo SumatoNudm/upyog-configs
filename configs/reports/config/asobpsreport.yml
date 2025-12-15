@@ -54,7 +54,7 @@ ReportDefinitions:
       label: reports.obps.currentowner
       type: string
       source: obps
-      showColumn: true
+      showColumn: false
     - name: planning_permit_no
       label: reports.obps.planningpermitno
       type: string
