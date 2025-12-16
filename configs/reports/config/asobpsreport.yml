@@ -10,6 +10,7 @@ ReportDefinitions:
       type: string
       source: obps
       showColumn: true
+      total: false
     - name: normalappdate
       label: reports.obps.normalappdate
       type: epoch
@@ -30,6 +31,7 @@ ReportDefinitions:
       type: string
       source: obps
       showColumn: true
+      isLocalisationRequired: true
     - name: name
       label: rainmaker.obps.name
       type: string
@@ -40,16 +42,19 @@ ReportDefinitions:
       type: string
       source: obps
       showColumn: true
+      isLocalisationRequired: true
     - name: occupancy_type
       label: reports.obps.occupancytype
       type: string
       source: obps
       showColumn: false
+      isLocalisationRequired: true
     - name: status
       label: reports.obps.status
       type: string
       source: obps
       showColumn: true
+      isLocalisationRequired: true
     - name: currentowner
       label: reports.obps.currentowner
       type: string
@@ -135,11 +140,13 @@ ReportDefinitions:
       type: string
       source: obps
       showColumn: true
+      isLocalisationRequired: true
     - name: count
       label: reports.obps.count
       type: number
       source: obps
       showColumn: true
+      total: false
 
   searchParams:
     - name: tenantid
