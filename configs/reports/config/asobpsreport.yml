@@ -153,11 +153,11 @@ searchParams:
   - name: tenantid
     label: reports.obps.tenant
     type: singlevaluelist
+    pattern: 'http://egov-mdms-service:8080/egov-mdms-service/v1/_get?tenantId=$tenantid&moduleName=tenant&masterName=tenants|$.MdmsRes.tenant.tenants.*.code|$.MdmsRes.tenant.tenants.*.city.name'
     source: obps
     isMandatory: false
     wrapper: true
     searchClause: AND tenantid = $tenantid
-
   - name: status_name
     label: reports.obps.status
     type: singlevaluelist
@@ -188,4 +188,4 @@ searchParams:
       'FORWARDED_TO_TECHNICAL_ENGINEER_MB',
       'FORWARDED_TO_DD_AD_TCP'
       )
-       groupby: GROUP BY status
+    groupby: GROUP BY status
