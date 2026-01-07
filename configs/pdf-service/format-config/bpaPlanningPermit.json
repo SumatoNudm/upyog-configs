@@ -41,7 +41,7 @@
           {
             "columns": [
               {
-                "text": "{{PP_NO}} : {{applicationNo}}",
+                "text": "{{PP_NO}} : {{planningPermitNo}}",
                 "style": "textStyles"
               },
               {

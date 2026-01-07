@@ -26,7 +26,25 @@
               {
                 "variable": "occupancyCertificateNo",
                 "value": {
-                  "path": "$.approvalNo"
+                   "path": "$.occupancyCertificateNo"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-obpsv2"
+                }
+              },
+              {
+                "variable": "occupancyCertificateDate",
+                "value": {
+                   "path": "$.occupancyCertificateDate"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
