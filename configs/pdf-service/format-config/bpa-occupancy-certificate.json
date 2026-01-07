@@ -111,13 +111,13 @@
             "text": "{{certifiedText}}"
           },
           {
-            "text": " {{permitNo}}"
+            "text": " {{occupancyCertificateNo}}"
           },
           {
             "text" : " {{dated}}"
           },
           {
-            "text": " {{permitDate}} "
+            "text": " {{occupancyCertificateDate}} "
           },
           {
             "text": " {{issuedTo}}"

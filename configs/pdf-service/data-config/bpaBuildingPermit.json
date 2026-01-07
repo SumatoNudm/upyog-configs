@@ -1113,6 +1113,24 @@
                 "variable": "constructionType",
                 "value": {
                   "path": "$.additionalDetails.constructionType"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-obpsv2"
+                }
+              },
+              {
+                "variable": "buildingPermitNo",
+                "value": {
+                   "path": "$.buildingPermitNo"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {

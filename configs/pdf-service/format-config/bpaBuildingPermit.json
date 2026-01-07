@@ -47,7 +47,7 @@
           {
             "columns": [
               {
-                "text": "{{BP_NO}}:  {{applicationNo}}",
+                "text": "{{BP_NO}}:  {{buildingPermitNo}}",
                 "style": "textStyles",
                 "alignment": "left"
               },
