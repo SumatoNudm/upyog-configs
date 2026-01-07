@@ -33,7 +33,8 @@
                 "variable": "occupancyCertificateDate",
                 "value": {
                    "path": "$.occupancyCertificateDate"
-                }
+                },
+                "type": "date"
               },
               {
                 "variable": "edcrNo",
