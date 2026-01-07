@@ -122,12 +122,6 @@
                 "variable": "planningPermitNo",
                 "value": {
                    "path": "$.planningPermitNo"
-                },
-                "type": "label",
-                "localisation": {
-                  "required": true,
-                  "prefix": null,
-                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -592,7 +586,6 @@
                 "value": {
                   "path": "$.additionalDetails.constructionType"
                 },
-                "type": "label",
                 "localisation": {
                   "required": true,
                   "prefix": null,
