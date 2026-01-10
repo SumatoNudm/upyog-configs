@@ -1112,7 +1112,7 @@
               {
                 "variable": "constructionType",
                 "value": {
-                  "path": "$.additionalDetails.constructionType"
+                  "path": "$.applicationType"
                 },
                 "localisation": {
                   "required": true,
