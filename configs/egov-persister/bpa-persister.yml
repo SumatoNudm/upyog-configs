@@ -56,12 +56,12 @@ serviceMaps:
             - jsonPath: $.BPA.bpFeeReceiptFileStoreId
             - jsonPath: $.BPA.propertyNo
             - jsonPath: $.BPA.propertyDetails
-            - jsonPath: $.BPA.signedPpFileStoreId
-            - jsonPath: $.BPA.signedBpFileStoreId
-            - jsonPath: $.BPA.signedOcFileStoreId
               type: JSON
               dbType: JSONB
             - jsonPath: $.BPA.propertyVendor
+            - jsonPath: $.BPA.signedPpFileStoreId
+            - jsonPath: $.BPA.signedBpFileStoreId
+            - jsonPath: $.BPA.signedOcFileStoreId
 
         # Insert documents associated with BPA
         - query: >
