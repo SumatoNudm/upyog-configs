@@ -170,7 +170,7 @@
                         "style": "textStyles"
                       },
                       {
-                        "text": "",
+                        "text": "{{lzone}}",
                         "colSpan": 2,
                         "border": [
                           true,
