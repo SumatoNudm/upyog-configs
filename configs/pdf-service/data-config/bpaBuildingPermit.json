@@ -1546,7 +1546,7 @@
             "qrcodeConfig": [
                 {
                     "variable": "qrcodeimage",
-                    "value": "/upyog-ui/citizen/obpsv2/application/{{applicationNo}}/{{tenantid}}"
+                    "value": "/digit-ui/citizen/obpsv2/application/{{applicationNo}}/{{tenantid}}"
                 }
             ]
         }
