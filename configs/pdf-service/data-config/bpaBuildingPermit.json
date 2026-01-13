@@ -1127,6 +1127,12 @@
                 }
               },
               {
+                "variable": "lzone",
+                "value": {
+                  "path": "$.edcrDetail[0].planDetail.planInformation.landUseZone"
+                }
+              },
+              {
                 "variable": "frontSetBack",
                 "value": {
                   "path": "$.edcrDetail[0].planDetail.blocks[0].setBacks[0].frontYard.area"
