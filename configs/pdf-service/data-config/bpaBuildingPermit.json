@@ -246,6 +246,12 @@
                 }
               },
               {
+                "variable": "planningpermitNo",
+                "value": {
+                   "path": "$.planningPermitNo"
+                }
+              },
+              {
                 "variable": "permitNumber",
                 "value": {
                   "path": "$.permitNumber"
