@@ -89,7 +89,7 @@
                     "alignment": "left"
                   },
                   {
-                    "text": "2. {{planningPermitNo}} {{permitNumber}}, {{Dated}} {{date}}",
+                    "text": "2. {{planningPermitNo}} {{planningpermitNo}}, {{Dated}} {{date}}",
                     "style": "textStyles",
                     "alignment": "left",
                     "margin": [50, 0, 0, 0]
