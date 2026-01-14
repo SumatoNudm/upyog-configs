@@ -158,7 +158,8 @@ ReportDefinitions:
      status AS status_name,
      COUNT(*) AS count
      FROM ug_bpa_buildingplans
-     WHERE status IN (
+     WHERE 1=1
+     AND status IN (
      'FORWARDED_TO_TECHNICAL_ENGINEER_GP',
      'CITIZEN_APPROVAL',
      'PENDING_RTP_APPROVAL',
@@ -174,3 +175,4 @@ ReportDefinitions:
      'FORWARDED_TO_TECHNICAL_ENGINEER_MB',
      'FORWARDED_TO_DD_AD_TCP')
 groupby: GROUP BY status
+orderby: ORDER BY status_name
