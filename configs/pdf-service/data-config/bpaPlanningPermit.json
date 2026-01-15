@@ -202,7 +202,6 @@
                 "value": {
                   "path": "$.areaMapping.revenueVillage"
                 },
-                "type": "label",
                 "localisation": {
                   "required": true,
                   "prefix": null,

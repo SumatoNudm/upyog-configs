@@ -1201,6 +1201,17 @@
                 "variable": "revenueVillage",
                 "value": {
                   "path": "$.areaMapping.revenueVillage"
+                },
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-obpsv2"
+                }
+              },
+              {
+                "variable": "rtpName",
+                "value": {
+                   "path": "$.rtpDetails.rtpName"
                 }
               },
               {
