@@ -201,6 +201,12 @@
                 "variable": "revenueVillage",
                 "value": {
                   "path": "$.areaMapping.revenueVillage"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-obpsv2"
                 }
               },
               {
@@ -300,27 +306,15 @@
                 }
               },
               {
-                "variable": "NameOfRTP",
+                "variable": "rtpName",
                 "value": {
-                  "path": "PDF_NAME_OF_RTP"
-                },
-                "type": "label",
-                "localisation": {
-                  "required": true,
-                  "prefix": null,
-                  "module": "rainmaker-obpsv2"
+                   "path": "$.rtpDetails.rtpName"
                 }
               },
               {
-                "variable": "mobileNumber",
+                "variable": "applicantMobileNumber",
                 "value": {
-                  "path": "PDF_MOBILE_NUMBER"
-                },
-                "type": "label",
-                "localisation": {
-                  "required": true,
-                  "prefix": null,
-                  "module": "rainmaker-obpsv2"
+                   "path": "$.landInfo.owners[0].mobileNumber"
                 }
               },
               {
