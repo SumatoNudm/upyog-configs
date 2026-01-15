@@ -745,9 +745,9 @@
           },
           {
             "ol": [
-              "{{APPLICANT}} {{applicantName}} {{district}}, {{pincode}}, {{mobileNumber}}",
+              "{{APPLICANT}} {{applicantName}} {{district}}, {{pincode}}, {{applicantMobileNumber}}",
               {
-                "text": "{{RTP}} {{NAME_OF_RTP}}, {{mobileNumber}}"
+                "text": "{{RTP}} {{rtpName}}"
               }
             ],
             "style": "textStyles"
