@@ -1082,7 +1082,7 @@
               },
               "{{THE_SECURITY_REAR_ESTATE}}",
               {
-                "text": "{{NAME_OF_ARCHITECT}} {{RTP_NAME}} {{FOR_INFORMATION_AND_NECESSARY_ACTION}}"
+                "text": "{{NAME_OF_ARCHITECT}} {{rtpName}} {{FOR_INFORMATION_AND_NECESSARY_ACTION}}"
               }
             ],
             "style": "textStyles",
