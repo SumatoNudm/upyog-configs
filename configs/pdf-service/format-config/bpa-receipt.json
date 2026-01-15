@@ -67,8 +67,8 @@
         "table": {
           "widths": [
             "26%",
+            "28%",
             "21%",
-            "27%",
             "26%"
           ],
           "body": [
@@ -208,10 +208,10 @@
         "style": "next-noc-table",
         "table": {
           "widths": [
-            "27%",
-            "23%",
+            "28%",
             "25%",
-            "25%"
+            "25%",
+            "23%"
           ],
           "body": [
             [
@@ -347,7 +347,7 @@
                   true,
                   false,
                   false,
-                  false
+                  true
                 ],
                 "style": "receipt-table-value"
               },
@@ -357,7 +357,7 @@
                   false,
                   false,
                   false,
-                  false
+                  true
                 ],
                 "style": "receipt-table"
               },
@@ -367,22 +367,24 @@
                   false,
                   false,
                   false,
-                  false
+                  true
                 ],
                 "style": "receipt-table-value"
               },
               {
                 "text": "{{transactionID}}",
+                "margin":[-25, 0, 0, 0],
+                "fontSize": 10,
                 "border": [
                   false,
                   false,
                   true,
-                  false
+                  true
                 ],
                 "style": "receipt-table",
                 "font": "Roboto"
               }
-            ]
+         ]
           ]
         },
         "layout": {}
@@ -591,7 +593,7 @@
       "color": "#000000",
       "margin": [
         -25,
-        28,
+        24,
         -22,
         -8
       ]
@@ -636,7 +638,7 @@
       "bold": true,
       "margin": [
         -27,
-        50,
+        30,
         -10,
         0
       ],
@@ -646,7 +648,7 @@
       "fontSize": 12,
       "margin": [
         -27,
-        35,
+        20,
         -10,
         0
       ],
@@ -656,7 +658,7 @@
       "fontSize": 12,
       "margin": [
         -27,
-        30,
+        10,
         -10,
         0
       ],
