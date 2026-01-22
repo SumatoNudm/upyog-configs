@@ -383,6 +383,7 @@ serviceMaps:
             - jsonPath: $.landInfo.address.state
             - jsonPath: $.landInfo.address.country
             - jsonPath: $.landInfo.address.pincode
+            - jsonPath: $.landInfo.address.sameAsSiteAddress
             - jsonPath: $.landInfo.address.auditDetails.createdBy
             - jsonPath: $.landInfo.address.auditDetails.lastModifiedBy
             - jsonPath: $.landInfo.address.auditDetails.createdTime
