@@ -68,9 +68,9 @@ serviceMaps:
         - query: >
             INSERT INTO ug_land_address (
               id, land_info_id, tenant_id, house_no, address_line_1, address_line_2, landmark, locality,
-              district, region, state, country, pincode,
+              district, region, state, country, pincode, same_as_site_address,
               created_by, last_modified_by, created_time, last_modified_time, additional_details
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?::JSONB);
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?::JSONB);
           basePath: landInfo.address
           jsonMaps:
             - jsonPath: $.landInfo.address.id
@@ -86,6 +86,7 @@ serviceMaps:
             - jsonPath: $.landInfo.address.state
             - jsonPath: $.landInfo.address.country
             - jsonPath: $.landInfo.address.pincode
+            - jsonPath: $.landInfo.address.sameAsSiteAddress
             - jsonPath: $.landInfo.address.auditDetails.createdBy
             - jsonPath: $.landInfo.address.auditDetails.lastModifiedBy
             - jsonPath: $.landInfo.address.auditDetails.createdTime
@@ -347,9 +348,9 @@ serviceMaps:
         - query: >
             INSERT INTO ug_land_address (
               id, land_info_id, tenant_id, house_no, address_line_1, address_line_2, landmark, locality,
-              district, region, state, country, pincode,
+              district, region, state, country, pincode, same_as_site_address,
               created_by, last_modified_by, created_time, last_modified_time, additional_details
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?::JSONB)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?::JSONB)
             ON CONFLICT (id) DO UPDATE SET
               land_info_id = EXCLUDED.land_info_id,
               tenant_id = EXCLUDED.tenant_id,
@@ -363,6 +364,7 @@ serviceMaps:
               state = EXCLUDED.state,
               country = EXCLUDED.country,
               pincode = EXCLUDED.pincode,
+              same_as_site_address = EXCLUDED.same_as_site_address,
               last_modified_by = EXCLUDED.last_modified_by,
               last_modified_time = EXCLUDED.last_modified_time,
               additional_details = EXCLUDED.additional_details;
