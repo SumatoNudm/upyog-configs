@@ -43,7 +43,7 @@ ReportDefinitions:
       searchClause: AND pi.businessid = $application_no
   query: |
     SELECT
-      bp.application_no,
+      pi.businessid,
       to_char(to_timestamp(pi.createdtime / 1000), 'DD-MM-YYYY HH24:MI:SS') AS action_time,
       pi.action,
       st.state AS wf_state,
@@ -58,9 +58,7 @@ ReportDefinitions:
       pi.createdtime AS created_time,
       pi.lastmodifiedtime AS last_modified_time,
       COALESCE(pi.comment, '') AS comment
-    FROM ug_bpa_buildingplans bp
-    INNER JOIN eg_wf_processinstance_v2 pi
-      ON pi.businessid = bp.application_no
+    FROM  eg_wf_processinstance_v2 pi
     LEFT JOIN eg_wf_state_v2 st
       ON pi.status = st.uuid
     LEFT JOIN eg_user usr
